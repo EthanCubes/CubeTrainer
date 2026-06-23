@@ -26,4 +26,5 @@ Just open the link bro
 
 
 ## Credits
+- AI was used to indentify bugs.
 - [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
