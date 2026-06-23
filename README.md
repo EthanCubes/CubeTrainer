@@ -28,3 +28,4 @@ Just open the link bro
 ## Credits
 - AI was used to indentify bugs.
 - [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
+- [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
