@@ -18,6 +18,7 @@ function stopTimer() {
     stopTime = Date.now();
     timing = false;
     time = stopTime - startTime;
+    time = time / 1000;
     console.log(time);
     const trigger = document.getElementById("trigger");
     trigger.innerHTML = "Start";
