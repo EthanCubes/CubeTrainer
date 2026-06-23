@@ -1,13 +1,11 @@
 let startTime;
 let stopTime;
-let timing = false;
 let time = 0;
 
 setInterval(updateTimer, 10);
 
 function startTimer() {
     startTime = Date.now();
-    timing = true;
 
     const trigger = document.getElementById("trigger");
     trigger.innerHTML = "Stop";
@@ -16,7 +14,6 @@ function startTimer() {
 
 function stopTimer() {
     stopTime = Date.now();
-    timing = false;
     time = stopTime - startTime;
     time = time / 1000;
     console.log(time);
@@ -30,7 +27,7 @@ function stopTimer() {
 
 function updateTimer() {
     const timer = document.getElementById("timer");
-    if (timing){
+    if (timerStatus === "timing"){
         time = Date.now() - startTime;
         time = time / 1000;
     }
