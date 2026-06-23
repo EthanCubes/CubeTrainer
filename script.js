@@ -8,6 +8,10 @@ setInterval(updateTimer, 10);
 function startTimer() {
     startTime = Date.now();
     timing = true;
+
+    const trigger = document.getElementById("trigger");
+    trigger.innerHTML = "Stop";
+    trigger.style.color = "red";
 }
 
 function stopTimer() {
@@ -15,6 +19,9 @@ function stopTimer() {
     timing = false;
     time = stopTime - startTime;
     console.log(time);
+    const trigger = document.getElementById("trigger");
+    trigger.innerHTML = "Start";
+    trigger.style.color = "black";
 }
 
 function timerTrigger() {
