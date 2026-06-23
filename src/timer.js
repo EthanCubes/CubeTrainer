@@ -23,6 +23,8 @@ function stopTimer() {
     const trigger = document.getElementById("trigger");
     trigger.innerHTML = "Start";
     trigger.style.color = "black";
+
+    generateScramble();
 }
 
 function updateTimer() {

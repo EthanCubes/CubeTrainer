@@ -9,6 +9,8 @@ let lastMove;
 
 let random;
 
+generateScramble();
+
 function generateScramble() {
     scramble = "";
     for (let i = 0; i < 15; i++) {
@@ -30,6 +32,7 @@ function generateScramble() {
         scramble = scramble + selectedMove;
     }
     console.log(scramble)
+    changeScrambleText();
 }
 
 function changeScrambleText() {
