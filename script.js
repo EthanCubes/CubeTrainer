@@ -36,5 +36,9 @@ function timerTrigger() {
 
 function updateTimer() {
     const timer = document.getElementById("timer");
+    if (timing){
+        time = Date.now() - startTime;
+        time = time / 1000;
+    }
     timer.innerHTML = "<h1>" + time + "</h1>";
 }
