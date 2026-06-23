@@ -66,3 +66,7 @@ document.addEventListener("keyup", function(event) {
         console.log(timerStatus + "2");
     }
 })
+
+function buttonClicked() {
+    alert("This button doesn't actually do anything.")
+}
