@@ -38,7 +38,22 @@ function updateTimer() {
     if (timerStatus === "timing"){
         time = Date.now() - startTime;
         time = time / 1000;
+        timer.style.color = "black";
     }
+    else {
+        if (timerStatus === "prepping") {
+            timer.style.color = "red";
+        }
+        else {
+            if (timerStatus === "ready") {
+                timer.style.color = "lightGreen";
+            }
+            else {
+                timer.style.color = "black";
+            }
+        }
+    }
+
     timer.innerHTML = "<h1>" + time + "</h1>";
 }
 
