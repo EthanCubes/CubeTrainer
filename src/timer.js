@@ -14,8 +14,6 @@ function startTimer() {
     startTime = Date.now();
 
     const trigger = document.getElementById("trigger");
-    trigger.innerHTML = "Stop";
-    trigger.style.color = "red";
 }
 
 function stopTimer() {
@@ -23,12 +21,7 @@ function stopTimer() {
     time = stopTime - startTime;
     time = time / 1000;
     console.log(time);
-    if (time < 0.06) { //0.06 is the threshfold where you get a resolve in cubing, I think.
-        alert("Stop spamming!")
-    }
     const trigger = document.getElementById("trigger");
-    trigger.innerHTML = "Start";
-    trigger.style.color = "black";
 
     generateScramble(); // From scramble.js
 }
