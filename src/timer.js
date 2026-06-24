@@ -72,7 +72,7 @@ document.addEventListener("keydown", function(event) {
             else {
                 if (timerStatus === "prepping") {
                     let prepTime = Date.now() - prepStartTime;
-                    if (prepTime > 1000) {
+                    if (prepTime > 500) {
                         timerStatus = "ready";
                         console.log("Ready...")
                     }
