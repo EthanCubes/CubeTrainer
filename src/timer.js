@@ -83,7 +83,3 @@ document.addEventListener("keyup", function(event) {
         }
     }
 })
-
-function buttonClicked() {
-    alert("This button doesn't actually do anything.")
-}
