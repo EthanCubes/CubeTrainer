@@ -1,5 +1,11 @@
 let startTime;
 let stopTime;
+
+let timerStatus = "idle";
+// Idle, Prepping, Ready, Timing, Stopped
+
+let prepStartTime;
+
 let time = 0;
 
 setInterval(updateTimer, 10);
@@ -24,7 +30,7 @@ function stopTimer() {
     trigger.innerHTML = "Start";
     trigger.style.color = "black";
 
-    generateScramble();
+    generateScramble(); // From scramble.js
 }
 
 function updateTimer() {
@@ -36,27 +42,34 @@ function updateTimer() {
     timer.innerHTML = "<h1>" + time + "</h1>";
 }
 
-let timerStatus = "idle";
-// Idle, Prepping, Timing, Stopped
-
 document.addEventListener("keydown", function(event) {
     if (event.code === "Space") {
         if (timerStatus === "idle") {
             timerStatus = "prepping";
+            prepStartTime = Date.now();
+            console.log("Prepping...")
         } 
         else {
             if (timerStatus === "timing") {
                 stopTimer();
                 timerStatus = "stopped";
+            } 
+            else {
+                if (timerStatus === "prepping") {
+                    let prepTime = Date.now() - prepStartTime;
+                    if (prepTime > 1000) {
+                        timerStatus = "ready";
+                        console.log("Ready...")
+                    }
+                }
             }
         }
-        console.log(timerStatus + "1");
     }
 })
 
 document.addEventListener("keyup", function(event) {
     if (event.code === "Space") {
-        if (timerStatus === "prepping") {
+        if (timerStatus === "ready") {
             startTimer();
             timerStatus = "timing";
         } 
@@ -64,8 +77,10 @@ document.addEventListener("keyup", function(event) {
             if (timerStatus === "stopped") {
                 timerStatus = "idle";
             }
+            else {
+                timerStatus = "idle";
+            }
         }
-        console.log(timerStatus + "2");
     }
 })
 
