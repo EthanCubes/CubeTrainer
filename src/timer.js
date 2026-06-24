@@ -1,3 +1,6 @@
+let solves = [];
+let currentSolve = {time: undefined, scramble: undefined};
+
 let startTime;
 let stopTime;
 
@@ -22,6 +25,10 @@ function stopTimer() {
     time = time / 1000;
     console.log(time);
     const trigger = document.getElementById("trigger");
+
+    currentSolve.time = time;
+    currentSolve.scramble = scramble;
+    solves.push(JSON.parse(JSON.stringify(currentSolve)));
 
     generateScramble(); // From scramble.js
 }
