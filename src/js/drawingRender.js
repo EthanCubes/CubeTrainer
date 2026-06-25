@@ -29,7 +29,6 @@ function changeSticker(element, color) {
 
 function renderDrawing() {
     for (let i = 0; i < 54; i++) {
-        console.log(i);
         let sticker = document.getElementById("grid" + (i));
         changeSticker(sticker, cubePos[i]);
     }
