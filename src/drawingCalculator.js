@@ -1,6 +1,6 @@
 // dumb ahh code
 
-let cubePosDefault = [1, 1, 1, 1, 1, 1, 1, 1, 1,
+const cubePosDefault = [1, 1, 1, 1, 1, 1, 1, 1, 1,
     2, 2, 2, 2, 2, 2, 2, 2, 2,
     3, 3, 3, 3, 3, 3, 3, 3, 3,
     4, 4, 4, 4, 4, 4, 4, 4, 4,
@@ -21,6 +21,10 @@ let cubePos = [1, 1, 1, 1, 1, 1, 1, 1, 1,
 // Center: orange, green, red, blue
 // Bottom: yellow
 // Colors: 1, 2, 3, 4, 5, 6
+
+function reset() {
+    cubePos = JSON.parse(JSON.stringify(cubePosDefault));
+}
 
 function u() {
     // white
