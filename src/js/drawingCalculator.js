@@ -324,3 +324,11 @@ function fMove(repeat) {
         xMove(3);
     }
 }
+
+function fPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        xMove(1);
+        uMove(3);
+        xMove(3);
+    }
+}
