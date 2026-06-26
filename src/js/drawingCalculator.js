@@ -1,4 +1,4 @@
-// dumb ahh code (all handwritten btw)
+// dumb ahh code
 
 const cubePosDefault = [1, 1, 1, 1, 1, 1, 1, 1, 1,
     2, 2, 2, 2, 2, 2, 2, 2, 2,
@@ -362,5 +362,13 @@ function rMove(repeat) {
 function rPrime(repeat) {
     for (let i = 0; i < repeat; i++) {
         rMove(3);
+    }
+}
+
+function bMove(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        xMove(3);
+        uMove(1);
+        xMove(1);
     }
 }
