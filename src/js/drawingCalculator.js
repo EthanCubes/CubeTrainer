@@ -358,3 +358,9 @@ function rMove(repeat) {
         zMove(1);
     }
 }
+
+function rPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        rMove(3);
+    }
+}
