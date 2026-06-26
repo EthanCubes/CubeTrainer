@@ -2,9 +2,9 @@
 
 A web application that serves as a timer, scramble generator, and algorithm driller for speedcubers (people who try to solve a Rubik's cube as fast as possible).
 
-![The image isn't here yet, but when I do it'll be here](./)
+![Website with a timer and net of a Rubik's cube](./)
 
-[Live Demo]()
+[Live Demo](https://ethancubes.github.io/CubeTrainer)
 
 
 ## Quick Start
@@ -13,6 +13,8 @@ Just open the link bro
 
 ## Features
 - A timer that times your Rubik's cube solves.
+- A scramble generator that generates scrambles for you to time on the timer.
+- A net of the cube (A.K.A. Drawing) displays the current scramble that the scramble generator generated.
 
 
 ## How it Works
@@ -23,6 +25,20 @@ Just open the link bro
 3. When the trigger button is pressed again, the JavaScript value Date.now() records the current time.
 4. The difference between the two values is calculated, and therefore returns the time in milliseconds.
 5. Uses InnerHTML to change back the trigger button's text from "stop" to "start" and from red back to black.
+
+### Scramble Generator
+1. Upon the page loading or the timer stopping, the scramble generator is told to generate a new scramble.
+2. For each of the 20 moves in the scramble, a random basic move is picked (U, L, F, R, B, or D). At this stage there are no primes of twos yet.
+3. The chosen move is compared against the previous move. If it is the same move, a different one is picked. If it is not, it procedes.
+4. A modifier is chosen (basic, prime, or two). A basic move is just a clockwise rotation, while a prime is a counterclockwise rotations and a two is two rotations (yes, it counts as one move).
+5. InnerHTML is used to change the previous/filler scramble text into the actual scramble.
+
+### Cube Drawing (The Cube Net Thing)
+This was by far the hardest and most impressive thing to code.
+1. An array is set up to store the positions of each sticker) (not pieces cause I don't want to figure that out)
+2. Functions for rotation of the top layer and rotatation of the entire cube are the base for every single other move.They work by switching the positions of the stickers in the array to simulate a normal, physical 3x3 cube.
+3. A function, when called, analyzes the moves of the scramble, and does every single move in the scramble.
+4. The array is then "rendered". That is too say that the actual cube net, (which was made using CSS and HTML) has each sticker on it updated according to it's correspondent in the array.
 
 
 ## Credits
