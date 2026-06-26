@@ -331,6 +331,12 @@ function lMove(repeat) {
     }
 }
 
+function lPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        lMove(3);
+    }
+}
+
 function fMove(repeat) {
     for (let i = 0; i < repeat; i++) {
         xMove(1);
