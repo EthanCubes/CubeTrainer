@@ -12,7 +12,7 @@ generateScramble();
 
 function generateScramble() {
     scramble = "";
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 20; i++) {
         for (let goodMove = false; !(goodMove); ) {
             random = Math.floor(Math.random() * 6);
             selectedMove = moves[random];
