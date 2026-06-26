@@ -27,7 +27,7 @@ function reset() {
     renderDrawing();
 }
 
-function u() {
+function uMove() {
     // white
     cubePosTemp[0] = cubePos[6];
     cubePosTemp[1] = cubePos[3];
@@ -159,7 +159,7 @@ function uPrime() {
     renderDrawing();
 }
 
-function r() {
+function rMove() {
     // white
     cubePosTemp[0] = cubePos[0];
     cubePosTemp[1] = cubePos[1];
