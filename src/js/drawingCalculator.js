@@ -372,3 +372,9 @@ function bMove(repeat) {
         xMove(1);
     }
 }
+
+function bPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        bMove(3);
+    }
+}
