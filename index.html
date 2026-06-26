@@ -5,7 +5,11 @@
         <link rel="stylesheet" href="./src/styles.css">
     </head>
     <body>
-        <p id="scramble"></p>
+        <div style="display: flex; margin: 10px;">
+            <p id="scramble" style="margin: 0px; margin-right: 10px;"></p>
+            &nbsp;
+            <button onclick="generateScramble()">Next Scramble</button>
+        </div>
 
         <div id="timer"><h1>0.000</h1></div>
 
@@ -85,6 +89,8 @@
             <div class="placeholder"></div>
             <div class="placeholder"></div>
         </div>
+
+        <footer></footer>
 
         <script src="./src/js/timer.js"></script>
         <script src="./src/js/drawingCalculator.js"></script>
