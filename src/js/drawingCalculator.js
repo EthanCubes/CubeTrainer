@@ -386,3 +386,9 @@ function dMove(repeat) {
         xMove(2);
     }
 }
+
+function dPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        dMove(3);
+    }
+}
