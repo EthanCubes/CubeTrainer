@@ -317,6 +317,12 @@ function zMove(repeat) {
     renderDrawing();
 }
 
+function uPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        uMove(3);        
+    }
+}
+
 function fMove(repeat) {
     for (let i = 0; i < repeat; i++) {
         xMove(1);
