@@ -316,3 +316,11 @@ function zMove(repeat) {
     console.log(cubePos);
     renderDrawing();
 }
+
+function fMove(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        xMove(1);
+        uMove(1);
+        xMove(3);
+    }
+}
