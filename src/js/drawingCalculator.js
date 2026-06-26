@@ -27,74 +27,6 @@ function reset() {
     renderDrawing();
 }
 
-function uMove(repeat) {
-    for (let i = 0; i < repeat; i++) {
-        // white
-        cubePosTemp[0] = cubePos[6];
-        cubePosTemp[1] = cubePos[3];
-        cubePosTemp[2] = cubePos[0];
-        cubePosTemp[3] = cubePos[7];
-        cubePosTemp[4] = cubePos[4];
-        cubePosTemp[5] = cubePos[1];
-        cubePosTemp[6] = cubePos[8];
-        cubePosTemp[7] = cubePos[5];
-        cubePosTemp[8] = cubePos[2];
-
-        // orange
-        cubePosTemp[9] = cubePos[18];
-        cubePosTemp[10] = cubePos[19];
-        cubePosTemp[11] = cubePos[20];
-        cubePosTemp[12] = cubePos[12];
-        cubePosTemp[13] = cubePos[13];
-        cubePosTemp[14] = cubePos[14];
-        cubePosTemp[15] = cubePos[15];
-        cubePosTemp[16] = cubePos[16];
-        cubePosTemp[17] = cubePos[17];
-
-        // green
-        cubePosTemp[18] = cubePos[27];
-        cubePosTemp[19] = cubePos[28];
-        cubePosTemp[20] = cubePos[29];
-        cubePosTemp[21] = cubePos[21];
-        cubePosTemp[22] = cubePos[22];
-        cubePosTemp[23] = cubePos[23];
-        cubePosTemp[24] = cubePos[24];
-        cubePosTemp[25] = cubePos[25];
-        cubePosTemp[26] = cubePos[26];
-
-        // red
-        cubePosTemp[27] = cubePos[36];
-        cubePosTemp[28] = cubePos[37];
-        cubePosTemp[29] = cubePos[38];
-        cubePosTemp[30] = cubePos[30];
-        cubePosTemp[31] = cubePos[31];
-        cubePosTemp[32] = cubePos[32];
-        cubePosTemp[33] = cubePos[33];
-        cubePosTemp[34] = cubePos[34];
-        cubePosTemp[35] = cubePos[35];
-
-        // blue
-        cubePosTemp[36] = cubePos[9];
-        cubePosTemp[37] = cubePos[10];
-        cubePosTemp[38] = cubePos[11];
-        cubePosTemp[39] = cubePos[39];
-        cubePosTemp[40] = cubePos[40];
-        cubePosTemp[41] = cubePos[41];
-        cubePosTemp[42] = cubePos[42];
-        cubePosTemp[43] = cubePos[43];
-        cubePosTemp[44] = cubePos[44];
-
-        // yellow
-        for (let i = 0; i < 9; i++) {
-            cubePosTemp[i + 45] = cubePos[i + 45];
-        }
-
-        cubePos = JSON.parse(JSON.stringify(cubePosTemp));
-    }
-    console.log(cubePos);
-    renderDrawing();
-}
-
 function xMove(repeat) {
     for (let i = 0; i < repeat; i++) {
         // white
@@ -310,6 +242,74 @@ function zMove(repeat) {
         cubePosTemp[51] = cubePos[35];
         cubePosTemp[52] = cubePos[32];
         cubePosTemp[53] = cubePos[29];
+
+        cubePos = JSON.parse(JSON.stringify(cubePosTemp));
+    }
+    console.log(cubePos);
+    renderDrawing();
+}
+
+function uMove(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        // white
+        cubePosTemp[0] = cubePos[6];
+        cubePosTemp[1] = cubePos[3];
+        cubePosTemp[2] = cubePos[0];
+        cubePosTemp[3] = cubePos[7];
+        cubePosTemp[4] = cubePos[4];
+        cubePosTemp[5] = cubePos[1];
+        cubePosTemp[6] = cubePos[8];
+        cubePosTemp[7] = cubePos[5];
+        cubePosTemp[8] = cubePos[2];
+
+        // orange
+        cubePosTemp[9] = cubePos[18];
+        cubePosTemp[10] = cubePos[19];
+        cubePosTemp[11] = cubePos[20];
+        cubePosTemp[12] = cubePos[12];
+        cubePosTemp[13] = cubePos[13];
+        cubePosTemp[14] = cubePos[14];
+        cubePosTemp[15] = cubePos[15];
+        cubePosTemp[16] = cubePos[16];
+        cubePosTemp[17] = cubePos[17];
+
+        // green
+        cubePosTemp[18] = cubePos[27];
+        cubePosTemp[19] = cubePos[28];
+        cubePosTemp[20] = cubePos[29];
+        cubePosTemp[21] = cubePos[21];
+        cubePosTemp[22] = cubePos[22];
+        cubePosTemp[23] = cubePos[23];
+        cubePosTemp[24] = cubePos[24];
+        cubePosTemp[25] = cubePos[25];
+        cubePosTemp[26] = cubePos[26];
+
+        // red
+        cubePosTemp[27] = cubePos[36];
+        cubePosTemp[28] = cubePos[37];
+        cubePosTemp[29] = cubePos[38];
+        cubePosTemp[30] = cubePos[30];
+        cubePosTemp[31] = cubePos[31];
+        cubePosTemp[32] = cubePos[32];
+        cubePosTemp[33] = cubePos[33];
+        cubePosTemp[34] = cubePos[34];
+        cubePosTemp[35] = cubePos[35];
+
+        // blue
+        cubePosTemp[36] = cubePos[9];
+        cubePosTemp[37] = cubePos[10];
+        cubePosTemp[38] = cubePos[11];
+        cubePosTemp[39] = cubePos[39];
+        cubePosTemp[40] = cubePos[40];
+        cubePosTemp[41] = cubePos[41];
+        cubePosTemp[42] = cubePos[42];
+        cubePosTemp[43] = cubePos[43];
+        cubePosTemp[44] = cubePos[44];
+
+        // yellow
+        for (let i = 0; i < 9; i++) {
+            cubePosTemp[i + 45] = cubePos[i + 45];
+        }
 
         cubePos = JSON.parse(JSON.stringify(cubePosTemp));
     }
