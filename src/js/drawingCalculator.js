@@ -350,3 +350,11 @@ function fPrime(repeat) {
         fMove(3);
     }
 }
+
+function rMove(repeat) {
+    for(let i = 0; i < repeat; i++) {
+        zMove(3);
+        uMove(1);
+        zMove(1);
+    }
+}
