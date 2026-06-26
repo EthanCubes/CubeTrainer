@@ -1,4 +1,4 @@
-const moves = ["R", "U", "L", "F", "D", "B"];
+const moves = ["U", "L", "F", "R", "B", "D"];
 const modifyers = [" ", "2 ", "' "]
 
 let scramble;
