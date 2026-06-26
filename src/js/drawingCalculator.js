@@ -327,8 +327,6 @@ function fMove(repeat) {
 
 function fPrime(repeat) {
     for (let i = 0; i < repeat; i++) {
-        xMove(1);
-        uMove(3);
-        xMove(3);
+        fMove(3);
     }
 }
