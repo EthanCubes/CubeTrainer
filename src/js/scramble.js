@@ -2,8 +2,7 @@ const moves = ["R", "U", "L", "F", "D", "B"];
 const modifyers = [" ", "2 ", "' "]
 
 let scramble;
-let selectedMove;
-let modifyer;
+const scrambleMoveList = [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
 
 let lastMove;
 
@@ -29,10 +28,13 @@ function generateScramble() {
 
         selectedMove = selectedMove + modifyer;
 
+        scrambleMoveList[i] = selectedMove;
+
         scramble = scramble + selectedMove;
     }
     console.log(scramble)
     changeScrambleText();
+    changeDrawing();
 }
 
 function changeScrambleText() {
