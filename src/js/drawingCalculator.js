@@ -378,3 +378,11 @@ function bPrime(repeat) {
         bMove(3);
     }
 }
+
+function dMove(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        xMove(2);
+        uMove(1);
+        xMove(2);
+    }
+}
