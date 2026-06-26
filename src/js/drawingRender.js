@@ -45,7 +45,7 @@ function changeDrawing() { // Difficult to read regular scramble, so I'm going m
                 uMove(2);
                 break;
             case "U' ":
-                uPrime(3);
+                uPrime(1);
                 break;
             
             case "L ":

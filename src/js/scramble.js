@@ -2,7 +2,7 @@ const moves = ["R", "U", "L", "F", "D", "B"];
 const modifyers = [" ", "2 ", "' "]
 
 let scramble;
-const scrambleMoveList = [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
+let scrambleMoveList = [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
 
 let lastMove;
 
