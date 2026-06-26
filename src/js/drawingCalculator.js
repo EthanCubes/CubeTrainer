@@ -97,7 +97,6 @@ function xMove(repeat) {
 
         cubePos = JSON.parse(JSON.stringify(cubePosTemp));
     }
-    console.log(cubePos);
     renderDrawing();
 }
 
@@ -171,7 +170,6 @@ function yMove(repeat) {
 
         cubePos = JSON.parse(JSON.stringify(cubePosTemp));
     }
-    console.log(cubePos);
     renderDrawing();
 }
 
@@ -245,7 +243,6 @@ function zMove(repeat) {
 
         cubePos = JSON.parse(JSON.stringify(cubePosTemp));
     }
-    console.log(cubePos);
     renderDrawing();
 }
 
@@ -313,7 +310,6 @@ function uMove(repeat) {
 
         cubePos = JSON.parse(JSON.stringify(cubePosTemp));
     }
-    console.log(cubePos);
     renderDrawing();
 }
 
