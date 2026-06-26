@@ -323,6 +323,14 @@ function uPrime(repeat) {
     }
 }
 
+function lMove(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        zMove(1);
+        uMove(1);
+        zMove(3);
+    }
+}
+
 function fMove(repeat) {
     for (let i = 0; i < repeat; i++) {
         xMove(1);
