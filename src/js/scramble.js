@@ -12,25 +12,32 @@ generateScramble();
 
 function generateScramble() {
     scramble = "";
-    for (let i = 0; i < 20; i++) {
-        for (let goodMove = false; !(goodMove); ) {
-            random = Math.floor(Math.random() * 6);
-            selectedMove = moves[random];
-            if (!(lastMove === selectedMove)) {
-                goodMove = true;
+    switch (mode) {
+        case "timer":
+            for (let i = 0; i < 20; i++) {
+                for (let goodMove = false; !(goodMove);) {
+                    random = Math.floor(Math.random() * 6);
+                    selectedMove = moves[random];
+                    if (!(lastMove === selectedMove)) {
+                        goodMove = true;
+                    }
+                }
+
+                lastMove = selectedMove;
+
+                random = Math.floor(Math.random() * 3);
+                modifyer = modifyers[random];
+
+                selectedMove = selectedMove + modifyer;
+
+                scrambleMoveList[i] = selectedMove;
+
+                scramble = scramble + selectedMove;
             }
-        }
-
-        lastMove = selectedMove;
-
-        random = Math.floor(Math.random() * 3);
-        modifyer = modifyers[random];
-
-        selectedMove = selectedMove + modifyer;
-
-        scrambleMoveList[i] = selectedMove;
-
-        scramble = scramble + selectedMove;
+            break;
+        case "driller":
+            scramble = "INCOMPLETE CODE";
+            break;
     }
     console.log(scramble)
     changeScrambleText();
