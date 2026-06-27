@@ -1,5 +1,3 @@
-alert("Warning: This page is under construction. There may be some bugs and some features may be broken or unavailible.");
-
 const modeSelect = document.getElementById("modeSelect");
 let mode;
 

@@ -8,8 +8,6 @@ let lastMove;
 
 let random;
 
-generateScramble();
-
 function generateScramble() {
     scramble = "";
     switch (mode) {
