@@ -454,6 +454,33 @@ function changeDrawing() { // Difficult to read regular scramble, so I'm going m
             case "D'":
                 dPrime(1);
                 break;
+
+            case "x":
+                xMove(1);
+                break;
+            case "x2":
+                xMove(2);
+                break;
+            case "x'":
+                xMove(3);
+                break;
+            
+            case "y":
+                yMove(1);
+                break;
+            case "y2":
+                yMove(2);
+                break;
+            case "y'":
+                yMove(3);
+                break;
+
+            case "z":
+                zMove(1);
+                break;
+            case "z2":
+                zMove(2);
+                break;
         }
     }
 }
