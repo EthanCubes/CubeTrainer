@@ -13,9 +13,13 @@ function modeChanged() {
     switch (mode) {
         case "timer":
             setSelect.style.display = "none";
+            generateScramble();
             break;
         case "driller":
             setSelect.style.display = "inline-block";
+            generateScramble();
             break;
     }
 }
+
+modeChanged();
