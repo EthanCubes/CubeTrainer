@@ -2,7 +2,7 @@ const moves = ["U", "L", "F", "R", "B", "D"];
 const modifyers = [" ", "2 ", "' "]
 
 let scramble;
-let scrambleMoveList = [undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined]
+let scrambleMoveList;
 
 let lastMove;
 
@@ -28,10 +28,9 @@ function generateScramble() {
 
                 selectedMove = selectedMove + modifyer;
 
-                scrambleMoveList[i] = selectedMove;
-
                 scramble = scramble + selectedMove;
             }
+            scrambleMoveList = scramble.split(/\s+/);
             break;
         case "driller":
             scramble = "INCOMPLETE CODE";
