@@ -481,6 +481,9 @@ function changeDrawing() { // Difficult to read regular scramble, so I'm going m
             case "z2":
                 zMove(2);
                 break;
+            case "z'":
+                zMove(3);
+                break;
         }
     }
 }
