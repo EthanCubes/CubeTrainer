@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="./src/styles.css">
     </head>
     <body>
+        <select id="dropDown">
+            <option value="timer">Timer Mode</option>
+            <option value="drill">Algorithm Drill Mode</option>
+        </select>
+
         <div style="display: flex; margin: 10px;">
             <p id="scramble" style="margin: 0px; margin-right: 10px;"></p>
             &nbsp;
@@ -90,11 +95,10 @@
             <div class="placeholder"></div>
         </div>
 
-        <footer></footer>
-
+        <script src="./src/js/script.js"></script>
         <script src="./src/js/timer.js"></script>
         <script src="./src/js/drawingCalculator.js"></script>
         <script src="./src/js/drawingRender.js"></script>
-        <script src="./src/js/scramble.js"></script>
+        <script src="./src/js/timer/scramble.js"></script>
     </body>
 </html>
