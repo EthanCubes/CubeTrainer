@@ -1,1 +1,0 @@
-const dropDown = document.getElementById("dropDown");
