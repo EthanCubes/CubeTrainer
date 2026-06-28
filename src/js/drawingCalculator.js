@@ -581,6 +581,63 @@ function dWidePrime(repeat) {
     }
 }
 
+function mMove(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        rWidePrime();
+        rMove();
+    }
+}
+
+function mPrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        mMove(3);
+    }
+}
+
+function eMove(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        uWidePrime();
+        uMove();
+    }
+}
+
+function ePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        eMove(3);
+    }
+}
+
+function sMove(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        fWide();
+        fPrime();
+    }
+}
+
+function sPrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        sMove(3);
+    }
+}
+
 function changeDrawing() {
     reset();
     for (let i = 0; i < 20; i++) {
