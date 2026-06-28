@@ -810,6 +810,36 @@ function changeDrawing() {
             case "d'":
                 dWidePrime();
                 break;
+            
+            case "M":
+                mMove();
+                break;
+            case "M2":
+                mMove(2);
+                break;
+            case "M'":
+                mPrime();
+                break;
+            
+            case "E":
+                eMove();
+                break;
+            case "E2":
+                eMove(2);
+                break;
+            case "E'":
+                ePrime();
+                break;
+            
+            case "S":
+                sMove();
+                break;
+            case "S2":
+                sMove(2);
+                break;
+            case "S'":
+                sPrime();
+                break;
         }
     }
 }
