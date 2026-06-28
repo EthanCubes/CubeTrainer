@@ -521,6 +521,26 @@ function fWidePrime(repeat) {
     }
 }
 
+function rWide(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        lMove();
+        xMove();
+    }
+}
+
+function rWidePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        lPrime();
+        xPrime();
+    }
+}
+
 function changeDrawing() {
     reset();
     for (let i = 0; i < 20; i++) {
