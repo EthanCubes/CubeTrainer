@@ -551,13 +551,33 @@ function bWide(repeat) {
     }
 }
 
-function nWidePrime(repeat) {
+function bWidePrime(repeat) {
     if (repeat === undefined) {
         repeat = 1;
     }
     for (let i = 0; i < repeat; i++) {
         fPrime();
         zMove();
+    }
+}
+
+function dWide(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        uMove();
+        yPrime();
+    }
+}
+
+function dWidePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        uPrime();
+        yMove();
     }
 }
 
