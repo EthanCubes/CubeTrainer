@@ -481,6 +481,27 @@ function uWidePrime(repeat) {
     }
 }
 
+function lWide(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        rMove();
+        xPrime();
+    }
+}
+
+function lWidePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        rPrime();
+        xMove();
+    }
+}
+
+
 function changeDrawing() {
     reset();
     for (let i = 0; i < 20; i++) {
