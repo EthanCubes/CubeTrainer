@@ -462,7 +462,7 @@ function dPrime(repeat) {
 }
 
 
-function changeDrawing() { // Difficult to read regular scramble, so I'm going make it read a revised version that is easer for a computer to process.
+function changeDrawing() {
     reset();
     for (let i = 0; i < 20; i++) {
         let currentMove = scrambleMoveList[i];
