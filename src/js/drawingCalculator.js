@@ -246,6 +246,24 @@ function zMove(repeat) {
     renderDrawing();
 }
 
+function xPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        xMove(3);
+    }
+}
+
+function yPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        yMove(3);
+    }
+}
+
+function zPrime(repeat) {
+    for (let i = 0; i < repeat; i++) {
+        zMove(3);
+    }
+}
+
 function uMove(repeat) {
     for (let i = 0; i < repeat; i++) {
         // white
