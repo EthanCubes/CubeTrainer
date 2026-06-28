@@ -28,6 +28,9 @@ function reset() {
 }
 
 function xMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         // white
         cubePosTemp[0] = cubePos[18];
@@ -101,6 +104,9 @@ function xMove(repeat) {
 }
 
 function yMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         // white
         cubePosTemp[0] = cubePos[6];
@@ -174,6 +180,9 @@ function yMove(repeat) {
 }
 
 function zMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         // white
         cubePosTemp[0] = cubePos[15];
@@ -247,24 +256,36 @@ function zMove(repeat) {
 }
 
 function xPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         xMove(3);
     }
 }
 
 function yPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         yMove(3);
     }
 }
 
 function zPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         zMove(3);
     }
 }
 
 function uMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         // white
         cubePosTemp[0] = cubePos[6];
@@ -332,12 +353,18 @@ function uMove(repeat) {
 }
 
 function uPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         uMove(3);        
     }
 }
 
 function lMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         zMove(1);
         uMove(1);
@@ -346,12 +373,18 @@ function lMove(repeat) {
 }
 
 function lPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         lMove(3);
     }
 }
 
 function fMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         xMove(1);
         uMove(1);
@@ -360,12 +393,18 @@ function fMove(repeat) {
 }
 
 function fPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         fMove(3);
     }
 }
 
 function rMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for(let i = 0; i < repeat; i++) {
         zMove(3);
         uMove(1);
@@ -374,12 +413,18 @@ function rMove(repeat) {
 }
 
 function rPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         rMove(3);
     }
 }
 
 function bMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         xMove(3);
         uMove(1);
@@ -388,12 +433,18 @@ function bMove(repeat) {
 }
 
 function bPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         bMove(3);
     }
 }
 
 function dMove(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         xMove(2);
         uMove(1);
@@ -402,6 +453,9 @@ function dMove(repeat) {
 }
 
 function dPrime(repeat) {
+    if (repeat === undefined)  {
+        repeat = 1;
+    }
     for (let i = 0; i < repeat; i++) {
         dMove(3);
     }
