@@ -732,6 +732,84 @@ function changeDrawing() {
             case "z'":
                 zMove(3);
                 break;
+
+            case "Uw":
+            case "u":
+                uWide();
+                break;
+            case "Uw2":
+            case "u2":
+                uWide(2);
+                break;
+            case "Uw'":
+            case "u'":
+                uWidePrime();
+                break;
+            
+            case "Lw":
+            case "l":
+                lWide();
+                break;
+            case "Lw2":
+            case "l2":
+                lWide(2);
+                break;
+            case "Lw'":
+            case "l'":
+                lPrime();
+                break;
+            
+            case "Fw":
+            case "f":
+                fWide();
+                break;
+            case "Fw2":
+            case "f2":
+                fWide(2);
+                break;
+            case "Fw'":
+            case "f'":
+                fWidePrime();
+                break;
+            
+            case "Rw":
+            case "r":
+                rWide();
+                break;
+            case "Rw2":
+            case "r2":
+                rWide(2);
+                break;
+            case "Rw'":
+            case "r'":
+                rWidePrime();
+                break;
+            
+            case "Bw":
+            case "b":
+                bWide();
+                break;
+            case "Bw2":
+            case "b2":
+                bWide(2);
+                break;
+            case "Bw'":
+            case "b'":
+                bWidePrime();
+                break;
+            
+            case "Dw":
+            case "d":
+                dWide();
+                break;
+            case "Dw2":
+            case "d2":
+                dWide(2);
+                break;
+            case "Dw'":
+            case "d'":
+                dWidePrime();
+                break;
         }
     }
 }
