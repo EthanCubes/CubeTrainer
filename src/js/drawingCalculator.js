@@ -501,6 +501,25 @@ function lWidePrime(repeat) {
     }
 }
 
+function fWide(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        bMove();
+        zMove();
+    }
+}
+
+function fWidePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        bPrime();
+        zPrime();
+    }
+}
 
 function changeDrawing() {
     reset();
