@@ -461,6 +461,25 @@ function dPrime(repeat) {
     }
 }
 
+function uWide(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        dMove();
+        yMove();
+    }
+}
+
+function uWidePrime(repeat) {
+    if (repeat === undefined) {
+        repeat = 1;
+    }
+    for (let i = 0; i < repeat; i++) {
+        dPrime();
+        yPrime();
+    }
+}
 
 function changeDrawing() {
     reset();
