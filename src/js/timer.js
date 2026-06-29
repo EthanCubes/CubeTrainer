@@ -15,8 +15,6 @@ setInterval(updateTimer, 10);
 
 function startTimer() {
     startTime = Date.now();
-
-    const trigger = document.getElementById("trigger");
 }
 
 function stopTimer() {
@@ -55,6 +53,7 @@ function updateTimer() {
     }
 
     timer.innerHTML = "<h1>" + time + "</h1>";
+    toggleElements();
 }
 
 document.addEventListener("keydown", function(event) {
@@ -98,3 +97,24 @@ document.addEventListener("keyup", function(event) {
         }
     }
 })
+
+function toggleElements() {
+    const scramble = document.getElementById("scrambleContainer");
+    const modeSelect = document.getElementById("modeSelect");
+    const setSelect = document.getElementById("setSelect");
+    const drawing = document.getElementById("drawing");
+    if (timerStatus === "timing") {
+        scramble.style.display = "none";
+        modeSelect.style.display = "none";
+        setSelect.style.display = "none";
+        drawing.style.display = "none";       
+    }
+    else {
+        scramble.style.display = "flex";
+        modeSelect.style.display = "inline";
+        if (mode === "driller") {
+            setSelect.style.display = "inline";
+        }
+        drawing.style.display = "inline-grid";    
+    }
+}
