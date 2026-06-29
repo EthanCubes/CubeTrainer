@@ -1,0 +1,15 @@
+{
+    "6p1": "M U' M' U2 M' U' M",
+    "4p1": "M' U2 M",
+    "4p2": "M U2 M'",
+    "4p3": "M2",
+
+    "basicCase1": "M' U' M'",
+    "basicCase2": "M U' M'",
+
+    "2p1": "M' U' M",
+    "2p2": "M' U' M",
+    "2p3": "M' U' M'",
+    "2p4": "M' U' M",
+    "2p5": "M U' M'"
+}
