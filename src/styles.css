@@ -45,6 +45,8 @@ body {
 }
 
 #scrambleContainer {
+    display: flex;
+    margin: 10px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
