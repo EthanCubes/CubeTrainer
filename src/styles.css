@@ -55,3 +55,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#solves {
+    padding: 25px;
+
+    color: black;
+
+    display: block;
+    width: 30%;
+    height: 40%;
+    overflow-y: scroll;
+    background-color: rgb(171, 218, 252);
+
+    position: absolute;
+    top: 50%;
+    /*transform: translate(-0%, -100%);*/
+}

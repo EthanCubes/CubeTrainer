@@ -23,6 +23,14 @@
 
         <div id="timer"><h1>0.000</h1></div>
 
+        <div id="solves">
+            <div style="display: flex; ">
+                <h2 style="color: black; margin: 0px;">Solves</h2>
+                <button onclick="clearStoredSolves(), updateLocalStorage(), loadStoredSolves(), updateSolvesGUI()">Clear solves</button>
+            </div>
+            <p id="child"></p>
+        </div>
+
         <div id="drawing">
             <div class="placeholder"></div>
             <div class="drawingFace" id="white">

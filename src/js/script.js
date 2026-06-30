@@ -21,4 +21,5 @@ function modeChanged() {
 }
 
 loadStoredSolves();
+updateSolvesGUI();
 modeChanged();

@@ -29,6 +29,7 @@ function stopTimer() {
     solveData.solves.push(JSON.parse(JSON.stringify(currentSolve)));
     updateLocalStorage();
 
+    updateSolvesGUI();
     generateScramble(); // From scramble.js
 }
 
@@ -104,11 +105,12 @@ function toggleElements() {
     const modeSelect = document.getElementById("modeSelect");
     const setSelect = document.getElementById("setSelect");
     const drawing = document.getElementById("drawing");
+    const solves = document.getElementById("solves")
     if (timerStatus === "timing") {
         scramble.style.display = "none";
         modeSelect.style.display = "none";
         setSelect.style.display = "none";
-        drawing.style.display = "none";       
+        drawing.style.display = "none";
     }
     else {
         scramble.style.display = "flex";
