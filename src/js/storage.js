@@ -9,6 +9,7 @@ function updateLocalStorage() {
     localStorage.setItem("storedSolves", JSON.stringify(solveData));
 }
 
-function clearLocalStorage() { // dangerous
-    localStorage.removeItem("storedSolves")
+function clearStoredSolves() { // dangerous
+    solveData = {solves: []};
+    localStorage.setItem("storedSolves", null);
 }
