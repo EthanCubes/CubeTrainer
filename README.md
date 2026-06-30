@@ -43,6 +43,6 @@ This was by far the hardest and most impressive thing to code.
 
 ## Credits
 - AI was used to indentify bugs.
-- AI was also used to make the JSON algorithm sets from sets of algorithms found on websites like [JPerm.net](https://jperm.net)
+- AI was also used to make the JSON algorithm sets from sets of algorithms found on websites like [JPerm.net](https://jperm.net). It otherwise would've taken ages and also leaves a lot of room for human error.
 - [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
 - [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
