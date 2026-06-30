@@ -20,4 +20,5 @@ function modeChanged() {
     }
 }
 
+loadStoredSolves();
 modeChanged();

@@ -1,4 +1,4 @@
-let solves = [];
+let solveData = {solves: []};
 let currentSolve = {time: undefined, scramble: undefined};
 
 let startTime;
@@ -26,7 +26,8 @@ function stopTimer() {
 
     currentSolve.time = time;
     currentSolve.scramble = scramble;
-    solves.push(JSON.parse(JSON.stringify(currentSolve)));
+    solveData.solves.push(JSON.parse(JSON.stringify(currentSolve)));
+    updateLocalStorage();
 
     generateScramble(); // From scramble.js
 }
