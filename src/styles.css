@@ -62,16 +62,20 @@ body {
     color: black;
 
     display: block;
-    width: 30%;
+    width: 20%;
     height: 40%;
     overflow-y: scroll;
     background-color: rgb(171, 218, 252);
 
     position: absolute;
-    top: 50%;
-    /*transform: translate(-0%, -100%);*/
+    top: 100%;
+    transform: translate(-1%, -100%);
 }
 
 .fakeButton {
+    cursor: pointer;
+}
+
+#scramble {
     cursor: pointer;
 }

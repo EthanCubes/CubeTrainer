@@ -45,3 +45,8 @@ function changeScrambleText() {
     const scrambleText = document.getElementById("scramble");
     scrambleText.innerHTML = scramble;
 }
+
+function copyScramble() {
+    navigator.clipboard.writeText(scramble);
+    alert("Scramble Copied!");
+}
