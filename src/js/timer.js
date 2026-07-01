@@ -27,6 +27,7 @@ function stopTimer() {
     currentSolve.time = time;
     currentSolve.scramble = scramble;
     solveData.solves.push(JSON.parse(JSON.stringify(currentSolve)));
+    console.log(solveData);
     updateLocalStorage();
 
     updateSolvesGUI();

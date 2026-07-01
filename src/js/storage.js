@@ -11,7 +11,8 @@ function updateLocalStorage() {
 
 function clearStoredSolves() { // dangerous
     solveData = {solves: []};
-    localStorage.setItem("storedSolves", null);
+    localStorage.clear();
+    updateSolvesGUI();
 }
 
 
