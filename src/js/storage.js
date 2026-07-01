@@ -24,6 +24,7 @@ function updateSolvesGUI() {
         let node = solveData.solves[i].time;
         listElement.append(node);
         listElement.classList.add("listElement");
+        listElement.id = i;
         const child = document.getElementById("child");
         solveContainer.insertBefore(listElement, solveContainer.children[1]);
     }
