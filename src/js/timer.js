@@ -99,7 +99,9 @@ document.addEventListener("keyup", function(event) {
                 timerStatus = "idle";
             }
             else {
-                timerStatus = "idle";
+                if (!(timerStatus === "disabled")) {
+                    timerStatus = "idle";
+                }
             }
         }
     }
