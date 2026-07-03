@@ -118,6 +118,7 @@ function toggleElements() {
         setSelect.style.display = "none";
         drawing.style.display = "none";
         timeDifference.style.display = "none";
+        solves.style.display = "none";
     }
     else {
         scramble.style.display = "flex";
@@ -127,6 +128,7 @@ function toggleElements() {
         }
         drawing.style.display = "inline-grid";
         timeDifference.style.display = "block";   
+        solves.style.display = "block";
     }
 }
 
