@@ -137,6 +137,7 @@ function updateTimeDifference() {
     const timeDifference = document.getElementById("timeDifference");
     if (!(previousTime === undefined)) {
         difference = time - previousTime;
+        difference = difference.toPrecision(2);
     }
     else {
         difference = time - solveData.solves[currentSolveIndex].time;
