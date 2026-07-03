@@ -4,6 +4,8 @@ let currentSolve = {time: undefined, scramble: undefined};
 let startTime;
 let stopTime;
 
+let previousTime;
+
 let timerStatus = "idle";
 // Idle, Prepping, Ready, Timing, Stopped
 
@@ -30,8 +32,10 @@ function stopTimer() {
     console.log(solveData);
     updateLocalStorage();
 
+    updateTimeDifference();
     updateSolvesGUI();
     generateScramble(); // From scramble.js
+    previousTime = time;
 }
 
 function updateTimer() {
@@ -107,11 +111,13 @@ function toggleElements() {
     const setSelect = document.getElementById("setSelect");
     const drawing = document.getElementById("drawing");
     const solves = document.getElementById("solves")
+    const timeDifference = document.getElementById("timeDifference");
     if (timerStatus === "timing") {
         scramble.style.display = "none";
         modeSelect.style.display = "none";
         setSelect.style.display = "none";
         drawing.style.display = "none";
+        timeDifference.style.display = "none";
     }
     else {
         scramble.style.display = "flex";
@@ -119,6 +125,28 @@ function toggleElements() {
         if (mode === "driller") {
             setSelect.style.display = "inline";
         }
-        drawing.style.display = "inline-grid";    
+        drawing.style.display = "inline-grid";
+        timeDifference.style.display = "block";   
+    }
+}
+
+function updateTimeDifference() {
+    if (!(previousTime === undefined)) {
+        const timeDifference = document.getElementById("timeDifference");
+        let difference = time - previousTime;
+        difference = difference.toPrecision(2);
+        if (difference >= 0) {
+            timeDifference.innerHTML = "+" + difference;
+            timeDifference.style.color = "red";
+        }
+        else {
+            if (difference < 0) {
+                timeDifference.innerHTML = difference;
+                timeDifference.style.color = "lightGreen";
+            }
+            else {
+                timeDifference.innerHTML = "";
+            }
+        }
     }
 }
