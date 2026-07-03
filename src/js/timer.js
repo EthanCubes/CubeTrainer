@@ -133,22 +133,26 @@ function toggleElements() {
 }
 
 function updateTimeDifference() {
+    let difference;
+    const timeDifference = document.getElementById("timeDifference");
     if (!(previousTime === undefined)) {
-        const timeDifference = document.getElementById("timeDifference");
-        let difference = time - previousTime;
+        difference = time - previousTime;
+    }
+    else {
+        difference = time - solveData.solves[currentSolveIndex].time;
         difference = difference.toPrecision(2);
-        if (difference >= 0) {
-            timeDifference.innerHTML = "+" + difference;
-            timeDifference.style.color = "red";
+        }
+    if (difference >= 0) {
+        timeDifference.innerHTML = "+" + difference;
+        timeDifference.style.color = "red";
+    }
+    else {
+        if (difference < 0) {
+            timeDifference.innerHTML = difference;
+            timeDifference.style.color = "lightGreen";
         }
         else {
-            if (difference < 0) {
-                timeDifference.innerHTML = difference;
-                timeDifference.style.color = "lightGreen";
-            }
-            else {
-                timeDifference.innerHTML = "";
-            }
+            timeDifference.innerHTML = "";
         }
     }
 }

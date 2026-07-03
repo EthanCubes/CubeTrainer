@@ -1,3 +1,5 @@
+let currentSolveIndex;
+
 function loadStoredSolves() {
     solveData = JSON.parse(localStorage.getItem("storedSolves"));
     if (solveData === null) {
@@ -18,7 +20,9 @@ function clearStoredSolves() { // dangerous
 
 function updateSolvesGUI() {
     document.querySelectorAll(".listElement").forEach(el => el.remove());
-    for (let i = 0; i < solveData.solves.length; i++) {
+    currentSolveIndex = solveData.solves.length - 1;
+    console.log(currentSolveIndex);
+    for (let i = 0; i < currentSolveIndex; i++) {
         let solveContainer = document.getElementById("solves");
         let listElement = document.createElement("li");
         let node = solveData.solves[i].time;
