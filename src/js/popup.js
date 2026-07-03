@@ -19,12 +19,16 @@ function undim() {
 }
 
 function helpWindow(status) {
+    const help = document.getElementById("help");
     switch (status) {
         case "open":
-            // dim background
-            // make window
+            dimWindow();
+            help.style.display = "block";
+            sendToTop(help);
+            break;
         case "close":
-            // hide window
-            // remove dim
+            help.style.display = "none";
+            undim();
+            break;
     }
 }
