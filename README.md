@@ -2,7 +2,7 @@
 
 A web application that serves as a timer, scramble generator, and algorithm driller for speedcubers (people who try to solve a Rubik's cube as fast as possible).
 
-![Website with a timer and net of a Rubik's cube](./screenshots/2026-07-01%2017.31.png)
+![Website with a timer and net of a Rubik's cube](./screenshots/2026-07-03%2013.30.png)
 
 [Live Demo](https://ethancubes.github.io/CubeTrainer)
 
