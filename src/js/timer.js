@@ -139,11 +139,11 @@ function updateTimeDifference() {
     const timeDifference = document.getElementById("timeDifference");
     if (!(previousTime === undefined)) {
         difference = time - previousTime;
-        difference = difference.toPrecision(2);
+        difference = difference.toFixed(3);
     }
     else {
         difference = time - solveData.solves[currentSolveIndex].time;
-        difference = difference.toPrecision(2);
+        difference = difference.toFixed(3);
         }
     if (difference >= 0) {
         timeDifference.innerHTML = "+" + difference;
