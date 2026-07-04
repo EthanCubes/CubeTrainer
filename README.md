@@ -44,6 +44,7 @@ This was by far the hardest and most impressive thing to code.
 ## Credits
 - AI was used to indentify bugs.
 - AI was also used to make the JSON algorithm sets from sets of algorithms found on websites like [JPerm.net](https://jperm.net). It otherwise would've taken ages and also leaves a lot of room for human error.
+- The algorithms for Roux Edge Orientation (EO) were taken from the JPerm video: [Rubik's Cube: Learn the Roux Method in 10 Minutes](https://www.youtube.com/watch?v=lmBWkk-7teA)
 - A bunch of code was stolen from my other project CubeOS, and therefore I guess credit goes to SerenityUX's WebOS tutorial.
 - [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
 - [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
