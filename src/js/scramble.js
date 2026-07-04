@@ -31,14 +31,21 @@ function generateScramble() {
                 scramble = scramble + selectedMove;
             }
             scrambleMoveList = scramble.split(/\s+/);
+            console.log(scramble)
+            changeScrambleText();
+            changeDrawing();
             break;
         case "driller":
-            scramble = "INCOMPLETE CODE";
+            let scrambleObj = pickScramble();
+            let scrambleEnd = scrambleObj.endPos;
+            scrambleEnd = algorithmSet[scrambleEnd];
+            scramble = scrambleObj.algorithm;
+            scrambleMoveList = scramble.split(/\s+/);
+            console.log(scramble)
+            changeScrambleText();
+            changeDrawing();
             break;
     }
-    console.log(scramble)
-    changeScrambleText();
-    changeDrawing();
 }
 
 function changeScrambleText() {

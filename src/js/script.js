@@ -15,6 +15,7 @@ function modeChanged() {
             break;
         case "driller":
             setSelect.style.display = "inline-block";
+            getAlgorithms();
             generateScramble();
             break;
     }
