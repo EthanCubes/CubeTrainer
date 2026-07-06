@@ -11,7 +11,7 @@ function getAlgorithms() {
             }
             return response.json();
         })
-        .then(data => algorithmSet = data)
+        .then(data => {algorithmSet = data; generateScramble();})
         .catch(error => console.error('Failed to fetch data:', error));
 }
 
