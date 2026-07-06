@@ -4,6 +4,7 @@ let mode;
 const setSelect = document.getElementById("setSelect");
 
 modeSelect.addEventListener("change", modeChanged);
+setSelect.addEventListener("change", setChanged);
 
 function modeChanged() {
     mode = modeSelect.value;
@@ -20,6 +21,16 @@ function modeChanged() {
     }
 }
 
+function setChanged() {
+    set = setSelect.value;
+    console.log(set);
+    getAlgorithms();
+}
+
 loadStoredSolves();
 updateSolvesGUI();
 modeChanged();
+
+if (mode === "driller") {
+    setChanged();
+}

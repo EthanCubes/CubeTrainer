@@ -1,5 +1,5 @@
-let set = "CFOP_OLL";
 let algorithmSet;
+let set = "CFOP_OLL";
 
 function getAlgorithms() {
     // Partially copied from W3Schools
