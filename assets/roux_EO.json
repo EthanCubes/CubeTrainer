@@ -1,31 +1,21 @@
 {
-    "method": "CFOP",
-    "stage": "PLL",
+    "method": "roux",
+    "stage": "EO",
     "algorithms": [
-        {"name": "Aa", "algorithm": "x L2 D2 L' U' L D2 L' U L'", "endPos": "endPos0"},
-        {"name": "Ab", "algorithm": "x' L2 D2 L U L' D2 L U' L", "endPos": "endPos0"},
-        {"name": "E", "algorithm": "x' L' U L D' L' U' L D L' U' L D' L' U L D", "endPos": "endPos0"},
-        {"name": "F", "algorithm": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R", "endPos": "endPos0"},
-        {"name": "Ga", "algorithm": "R2 U R' U R' U' R U' R2 U' D R' U R D'", "endPos": "endPos0"},
-        {"name": "Gb", "algorithm": "R' U' R U D' R2 U R' U R U' R U' R2 D", "endPos": "endPos0"},
-        {"name": "Gc", "algorithm": "R2 U' R U' R U R' U R2 U D' R U' R' D", "endPos": "endPos0"},
-        {"name": "Gd", "algorithm": "R U R' U' D R2 U' R U' R' U R' U R2 D'", "endPos": "endPos0"},
-        {"name": "H", "algorithm": "M2 U M2 U2 M2 U M2", "endPos": "endPos0"},
-        {"name": "Ja", "algorithm": "x R2 F R F' R U2 r' U r U2", "endPos": "endPos0"},
-        {"name": "Jb", "algorithm": "R U R' F' R U R' U' R' F R2 U' R'", "endPos": "endPos0"},
-        {"name": "Na", "algorithm": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'", "endPos": "endPos0"},
-        {"name": "Nb", "algorithm": "R' U R U' R' F' U' F R U R' F R' F' R U' R", "endPos": "endPos0"},
-        {"name": "Ra", "algorithm": "R U' R' U' R U R D R' U' R D' R' U2 R'", "endPos": "endPos0"},
-        {"name": "Rb", "algorithm": "R2 F R U R U' R' F' R U2 R' U2 R", "endPos": "endPos0"},
-        {"name": "T", "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'", "endPos": "endPos0"},
-        {"name": "Ua", "algorithm": "M2 U M U2 M' U M2", "endPos": "endPos0"},
-        {"name": "Ub", "algorithm": "M2 U' M U2 M' U' M2", "endPos": "endPos0"},
-        {"name": "V", "algorithm": "R' U R' U' y R' F' R2 U' R' U R' F R F", "endPos": "endPos0"},
-        {"name": "Y", "algorithm": "F R U' R' U' R U R' F' R U R' U' R' F R F'", "endPos": "endPos0"},
-        {"name": "Z", "algorithm": "M' U M2 U M2 U M' U2 M2", "endPos": "endPos0"}
+        {"name": "6p1", "algorithm": "M U' M' U2 M' U' M U'", "endPos": "endPos0"},
+        {"name": "4p1", "algorithm": "M' U2 M U2", "endPos": "endPos0"},
+        {"name": "4p2", "algorithm": "M U2 M' U2", "endPos": "endPos0"},
+        {"name": "4p3", "algorithm": "M2 U'", "endPos": "endPos0"},
+        {"name": "2p1", "algorithm": "M' U' M U2", "endPos": "endPos0"},
+        {"name": "2p2", "algorithm": "M' U' M U", "endPos": "endPos0"},
+        {"name": "2p3", "algorithm": "M' U' M' U", "endPos": "endPos1"},
+        {"name": "2p4", "algorithm": "M' U' M U", "endPos": "endPos0"},
+        {"name": "2p5", "algorithm": "M U' M' U", "endPos": "endPos1"}
     ],
 
     "endPosScramble": {
-        "endPos0": ""
+        "endPos0": "",
+        "endPos1": "U2 R2 F2 R2 U' R2 F2 R2 U2 L R' F' L' R",
+        "endPos2": "U2 R2 B2 R2 U' R2 B2 R2 U2 L' R B' L R'"
     }
 }
