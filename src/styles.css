@@ -127,3 +127,7 @@ body {
 #openHelp {
     cursor: pointer;
 }
+
+.unselectable {
+    user-select: none;
+}
