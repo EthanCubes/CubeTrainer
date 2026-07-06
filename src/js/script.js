@@ -1,8 +1,6 @@
 const modeSelect = document.getElementById("modeSelect");
 let mode;
 
-const setSelect = document.getElementById("setSelect");
-
 modeSelect.addEventListener("change", modeChanged);
 setSelect.addEventListener("change", setChanged);
 

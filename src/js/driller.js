@@ -1,7 +1,9 @@
 let algorithmSet;
-let set = "CFOP_OLL";
 
-function getAlgorithms() {
+const setSelect = document.getElementById("setSelect");
+let set = setSelect.value;
+
+function getAlgorithms() {  
     // Partially copied from W3Schools
     // https://www.geeksforgeeks.org/javascript/read-json-file-using-javascript/
     fetch("../assets/" + set + ".json")
