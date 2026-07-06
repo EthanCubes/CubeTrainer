@@ -638,13 +638,8 @@ function sPrime(repeat) {
     }
 }
 
-function changeDrawing(endPos) {
-    if (mode === "timer") {
-       reset(); 
-    }
-    else {
-        cubePos = endPos;
-    }
+function changeDrawing() {
+    reset();
     for (let i = 0; i < scrambleMoveList.length; i++) {
         let currentMove = scrambleMoveList[i];
         switch(currentMove) {
