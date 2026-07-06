@@ -639,7 +639,7 @@ function sPrime(repeat) {
 }
 
 function changeDrawing(endPos) {
-    if (mode = "timer") {
+    if (mode === "timer") {
        reset(); 
     }
     else {
