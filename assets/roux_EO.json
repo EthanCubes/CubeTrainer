@@ -6,6 +6,8 @@
         {"name": "4p1", "algorithm": "M' U2 M U2", "endPos": "endPos0"},
         {"name": "4p2", "algorithm": "M U2 M' U2", "endPos": "endPos0"},
         {"name": "4p3", "algorithm": "M2 U'", "endPos": "endPos0"},
+        {"name": "basic0", "algorithm": "M' U' M'", "endPos": "endPos2"},
+        {"name": "basic1", "algorithm": "M U' M'", "endPos": "endPos2"},
         {"name": "2p1", "algorithm": "M' U' M U2", "endPos": "endPos0"},
         {"name": "2p2", "algorithm": "M' U' M U", "endPos": "endPos0"},
         {"name": "2p3", "algorithm": "M' U' M' U", "endPos": "endPos1"},
@@ -13,9 +15,22 @@
         {"name": "2p5", "algorithm": "M U' M' U", "endPos": "endPos1"}
     ],
 
-    "endPosScramble": {
-        "endPos0": "",
-        "endPos1": "U2 R2 F2 R2 U' R2 F2 R2 U2 L R' F' L' R",
-        "endPos2": "U2 R2 B2 R2 U' R2 B2 R2 U2 L' R B' L R'"
-    }
+    "endPos0": [1, 1, 1, 1, 1, 1, 1, 1, 1,
+    2, 2, 2, 2, 2, 2, 2, 2, 2,
+    3, 3, 3, 3, 3, 3, 3, 3, 3,
+    4, 4, 4, 4, 4, 4, 4, 4, 4,
+    5, 5, 5, 5, 5, 5, 5, 5, 5,
+    6, 6, 6, 6, 6, 6, 6, 6, 6],
+    "endPos1": [1, 1, 1, 2, 1, 4, 1, 3, 1,
+    2, 1, 2, 2, 2, 2, 2, 2, 2,
+    3, 1, 3, 3, 3, 3, 3, 6, 3,
+    4, 1, 4, 4, 4, 4, 4, 4, 4,
+    5, 5, 5, 5, 5, 5, 5, 5, 5,
+    6, 3, 6, 6, 6, 6, 6, 6, 6],
+    "endPos2": [1, 5, 1, 2, 1, 4, 1, 1, 1,
+    2, 1, 2, 2, 2, 2, 2, 2, 2,
+    3, 3, 3, 3, 3, 3, 3, 3, 3,
+    4, 1, 4, 4, 4, 4, 4, 4, 4,
+    5, 1, 5, 5, 5, 5, 5, 6, 5,
+    6, 6, 6, 6, 6, 6, 6, 5, 6]
 }
