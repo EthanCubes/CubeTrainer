@@ -13,6 +13,10 @@ let prepStartTime;
 
 let time = 0;
 
+const touchTrigger = document.getElementById("touchTrigger");
+
+let mouseDown;
+
 setInterval(updateTimer, 10);
 
 function startTimer() {
@@ -58,6 +62,10 @@ function updateTimer() {
         }
     }
 
+    if (mouseDown) {
+        triggerDown();
+    }
+
     timer.innerHTML = "<h1>" + time + "</h1>";
     toggleElements();
 }
@@ -68,11 +76,20 @@ document.addEventListener("keydown", function (event) {
     }
 })
 
+touchTrigger.addEventListener("pointerdown", function() {
+    mouseDown = true;
+});
+
 document.addEventListener("keyup", function (event) {
     if (event.code === "Space") {
         triggerUp();
     }
 })
+
+touchTrigger.addEventListener("pointerup", function() {
+    mouseDown = false;
+    triggerUp();
+});
 
 function triggerDown() {
     if (timerStatus === "idle") {
