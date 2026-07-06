@@ -8,6 +8,8 @@ let lastMove;
 
 let random;
 
+let method;
+
 function generateScramble() {
     scramble = "";
     switch (mode) {
@@ -15,7 +17,7 @@ function generateScramble() {
             for (let i = 0; i < 20; i++) {
                 for (let goodMove = false; !(goodMove);) {
                     random = Math.floor(Math.random() * 6);
-                    selectedMove = moves[random];
+                    let selectedMove = moves[random];
                     if (!(lastMove === selectedMove)) {
                         goodMove = true;
                     }
@@ -24,7 +26,7 @@ function generateScramble() {
                 lastMove = selectedMove;
 
                 random = Math.floor(Math.random() * 3);
-                modifyer = modifyers[random];
+                let modifyer = modifyers[random];
 
                 selectedMove = selectedMove + modifyer;
 
@@ -36,16 +38,29 @@ function generateScramble() {
             changeDrawing();
             break;
         case "driller":
-            let scrambleObj = pickScramble();
-            let scrambleEnd = scrambleObj.endPos;
-            scrambleEnd = algorithmSet[scrambleEnd];
-            scramble = scrambleObj.algorithm;
-            scrambleMoveList = scramble.split(/\s+/);
-            flipScramble();
-            console.log(scramble);
-            changeScrambleText();
-            changeDrawing(scrambleEnd);
-            break;
+            method = algorithmSet.method;
+            if (method === "CFOP") {
+                let scrambleObj = pickScramble();
+                scramble = scrambleObj.algorithm;
+                scrambleMoveList = scramble.split(/\s+/);
+                flipScramble();
+                console.log(scramble);
+                changeScrambleText();
+                changeDrawing();
+                break;
+            }
+            else {
+                if (method === "roux") {
+                    let scrambleObj = pickScramble();
+                    scramble = scrambleObj.algorithm;
+                    scrambleMoveList = scramble.split(/\s+/);
+                    flipScramble();
+                    console.log(scramble);
+                    changeScrambleText();
+                    changeDrawing();
+                    break;
+                }
+            }
     }
 }
 
@@ -60,7 +75,7 @@ function copyScramble() {
 }
 
 function flipScramble() {
-    let flippedMoveScramble;
+    let flippedMoveScramble = "";
     const flippedMoves = {
         "U": "U'",
         "U'": "U",
@@ -90,7 +105,7 @@ function flipScramble() {
         "u": "u'",
         "u'": "u",
         "u2": "u2",
-        
+
         "l": "l'",
         "l'": "l",
         "l2": "l2",
@@ -169,4 +184,5 @@ function flipScramble() {
     for (let i = 0; i < scrambleMoveList.length; i++) {
         flippedMoveScramble += scrambleMoveList[i] + " "
     }
+    scramble = flippedMoveScramble;
 }
