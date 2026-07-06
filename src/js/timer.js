@@ -24,7 +24,6 @@ function stopTimer() {
     time = stopTime - startTime;
     time = time / 1000;
     console.log(time);
-    const trigger = document.getElementById("trigger");
 
     currentSolve.time = time;
     currentSolve.scramble = scramble;
