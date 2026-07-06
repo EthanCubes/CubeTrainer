@@ -10,6 +10,8 @@ let random;
 
 let method;
 
+let selectedMove;
+
 function generateScramble() {
     scramble = "";
     switch (mode) {
@@ -17,7 +19,7 @@ function generateScramble() {
             for (let i = 0; i < 20; i++) {
                 for (let goodMove = false; !(goodMove);) {
                     random = Math.floor(Math.random() * 6);
-                    let selectedMove = moves[random];
+                    selectedMove = moves[random];
                     if (!(lastMove === selectedMove)) {
                         goodMove = true;
                     }
