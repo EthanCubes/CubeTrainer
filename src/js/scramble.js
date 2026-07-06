@@ -31,7 +31,7 @@ function generateScramble() {
                 scramble = scramble + selectedMove;
             }
             scrambleMoveList = scramble.split(/\s+/);
-            console.log(scramble)
+            console.log(scramble);
             changeScrambleText();
             changeDrawing();
             break;
@@ -41,9 +41,9 @@ function generateScramble() {
             scrambleEnd = algorithmSet[scrambleEnd];
             scramble = scrambleObj.algorithm;
             scrambleMoveList = scramble.split(/\s+/);
-            console.log(scramble)
+            console.log(scramble);
             changeScrambleText();
-            changeDrawing();
+            changeDrawing(scrambleEnd);
             break;
     }
 }
