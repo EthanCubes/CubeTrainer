@@ -1,5 +1,5 @@
-let solveData = {solves: []};
-let currentSolve = {time: undefined, scramble: undefined};
+let solveData = { solves: [] };
+let currentSolve = { time: undefined, scramble: undefined };
 
 let startTime;
 let stopTime;
@@ -40,7 +40,7 @@ function stopTimer() {
 
 function updateTimer() {
     const timer = document.getElementById("timer");
-    if (timerStatus === "timing"){
+    if (timerStatus === "timing") {
         time = Date.now() - startTime;
         time = time / 1000;
         timer.style.color = "black";
@@ -63,49 +63,57 @@ function updateTimer() {
     toggleElements();
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
     if (event.code === "Space") {
-        if (timerStatus === "idle") {
-            timerStatus = "prepping";
-            prepStartTime = Date.now();
-            console.log("Prepping...")
-        } 
-        else {
-            if (timerStatus === "timing") {
-                stopTimer();
-                timerStatus = "stopped";
-            } 
-            else {
-                if (timerStatus === "prepping") {
-                    let prepTime = Date.now() - prepStartTime;
-                    if (prepTime > 500) {
-                        timerStatus = "ready";
-                        console.log("Ready...")
-                    }
-                }
-            }
-        }
+        triggerDown();
     }
 })
 
-document.addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function (event) {
     if (event.code === "Space") {
-        if (timerStatus === "ready") {
-            startTimer();
-            timerStatus = "timing";
-        } 
+        triggerUp();
+    }
+})
+
+function triggerDown() {
+    if (timerStatus === "idle") {
+        timerStatus = "prepping";
+        prepStartTime = Date.now();
+        console.log("Prepping...")
+    }
+    else {
+        if (timerStatus === "timing") {
+            stopTimer();
+            timerStatus = "stopped";
+        }
         else {
-            if (timerStatus === "stopped") {
-                timerStatus = "idle";
-            }
-            else {
-                if (!(timerStatus === "disabled")) {
-                    timerStatus = "idle";
+            if (timerStatus === "prepping") {
+                let prepTime = Date.now() - prepStartTime;
+                if (prepTime > 500) {
+                    timerStatus = "ready";
+                    console.log("Ready...")
                 }
             }
         }
     }
-})
+}
+
+function triggerUp() {
+    if (timerStatus === "ready") {
+        startTimer();
+        timerStatus = "timing";
+    }
+    else {
+        if (timerStatus === "stopped") {
+            timerStatus = "idle";
+        }
+        else {
+            if (!(timerStatus === "disabled")) {
+                timerStatus = "idle";
+            }
+        }
+    }
+}
 
 function toggleElements() {
     const scramble = document.getElementById("scrambleContainer");
@@ -129,7 +137,7 @@ function toggleElements() {
             setSelect.style.display = "inline";
         }
         drawing.style.display = "inline-grid";
-        timeDifference.style.display = "block";   
+        timeDifference.style.display = "block";
         solves.style.display = "block";
     }
 }
@@ -144,7 +152,7 @@ function updateTimeDifference() {
     else {
         difference = time - solveData.solves[currentSolveIndex].time;
         difference = difference.toFixed(3);
-        }
+    }
     if (difference >= 0) {
         timeDifference.innerHTML = "+" + difference;
         timeDifference.style.color = "red";
