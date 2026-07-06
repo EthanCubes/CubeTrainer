@@ -761,7 +761,7 @@ function changeDrawing(endPos) {
                 break;
             case "Lw'":
             case "l'":
-                lPrime();
+                lWidePrime();
                 break;
             
             case "Fw":
