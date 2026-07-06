@@ -7,8 +7,8 @@ A web application that serves as a timer, scramble generator, and algorithm dril
 [Live Demo](https://ethancubes.github.io/CubeTrainer)
 
 
-## Quick Start
-Just open the link bro
+## How to run locally
+Download the repo from GitHub and unzip it. Open index.html with your preferred browser. Make sure that your browser is on a fairly recent version since browsers from before 2015 may not work.
 
 
 ## Features
