@@ -15,8 +15,7 @@ function modeChanged() {
             break;
         case "driller":
             setSelect.style.display = "inline-block";
-            getAlgorithms();
-            generateScramble();
+            getAlgorithms(); // generate scramble used to be here, but will now be placed inide of getalgorithms so it only runs after the algorithms have loaded.
             break;
     }
 }
