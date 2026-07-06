@@ -35,7 +35,7 @@ Just open the link bro
 
 ### Cube Drawing (The Cube Net Thing)
 This was by far the hardest and most impressive thing to code.
-1. An array is set up to store the positions of each sticker) (not pieces cause I don't want to figure that out)
+1. An array is set up to store the positions of each sticker (not pieces cause I don't want to figure that out)
 2. Functions for rotation of the top layer and rotatation of the entire cube are the base for every single other move.They work by switching the positions of the stickers in the array to simulate a normal, physical 3x3 cube.
 3. A function, when called, analyzes the moves of the scramble, and does every single move in the scramble.
 4. The array is then "rendered". That is too say that the actual cube net, (which was made using CSS and HTML) has each sticker on it updated according to it's correspondent in the array.
@@ -48,3 +48,4 @@ This was by far the hardest and most impressive thing to code.
 - A bunch of code was stolen from my other project CubeOS, and therefore I guess credit goes to SerenityUX's WebOS tutorial.
 - [W3Schools](https://www.w3schools.com/), [GeeksForGeeks](https://www.geeksforgeeks.org),  and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
 - [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
+- [Ruwix Cube Solver](https://ruwix.com/cube-solver/) helped me determine the fastest way to scramble a cube into the Roux EO position.
