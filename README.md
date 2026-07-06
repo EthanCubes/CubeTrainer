@@ -49,3 +49,4 @@ This was by far the hardest and most impressive thing to code.
 - [W3Schools](https://www.w3schools.com/), [GeeksForGeeks](https://www.geeksforgeeks.org),  and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
 - [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
 - [Ruwix Cube Solver](https://ruwix.com/cube-solver/) helped me determine the fastest way to scramble a cube into the Roux EO position.
+- Favicon Icon from [Google Fonts](https://fonts.google.com/icons), converted to .ico by [Cloud Convert](https://cloudconvert.com/png-to-ico)
