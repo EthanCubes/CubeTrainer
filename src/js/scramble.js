@@ -57,6 +57,11 @@ function generateScramble() {
                     scramble = scrambleObj.algorithm;
                     scrambleMoveList = scramble.split(/\s+/);
                     flipScramble();
+                    let prefixKey = scrambleObj.endPos;
+                    console.log(prefixKey);
+                    let prefix = algorithmSet.endPosScramble[prefixKey];
+                    scramble = prefix + " " + scramble;
+                    scrambleMoveList = scramble.split(/\s+/);
                     console.log(scramble);
                     changeScrambleText();
                     changeDrawing();

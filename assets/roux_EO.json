@@ -2,15 +2,15 @@
     "method": "roux",
     "stage": "EO",
     "algorithms": [
-        {"name": "6p1", "algorithm": "M U' M' U2 M' U' M U'", "endPos": "endPos0"},
-        {"name": "4p1", "algorithm": "M' U2 M U2", "endPos": "endPos0"},
-        {"name": "4p2", "algorithm": "M U2 M' U2", "endPos": "endPos0"},
-        {"name": "4p3", "algorithm": "M2 U'", "endPos": "endPos0"},
-        {"name": "2p1", "algorithm": "M' U' M U2", "endPos": "endPos0"},
-        {"name": "2p2", "algorithm": "M' U' M U", "endPos": "endPos0"},
-        {"name": "2p3", "algorithm": "M' U' M' U", "endPos": "endPos1"},
-        {"name": "2p4", "algorithm": "M' U' M U", "endPos": "endPos0"},
-        {"name": "2p5", "algorithm": "M U' M' U", "endPos": "endPos1"}
+        {"name": "6p1", "algorithm": "M U' M' U2 M' U' M U'", "endPos": "endPos1"},
+        {"name": "4p1", "algorithm": "M' U2 M U2", "endPos": "endPos1"},
+        {"name": "4p2", "algorithm": "M U2 M' U2", "endPos": "endPos1"},
+        {"name": "4p3", "algorithm": "M2 U'", "endPos": "endPos1"},
+        {"name": "2p1", "algorithm": "M' U' M U2", "endPos": "endPos1"},
+        {"name": "2p2", "algorithm": "M' U' M U", "endPos": "endPos1"},
+        {"name": "2p3", "algorithm": "M' U' M' U", "endPos": "endPos2"},
+        {"name": "2p4", "algorithm": "M' U' M U", "endPos": "endPos1"},
+        {"name": "2p5", "algorithm": "M U' M' U", "endPos": "endPos2"}
     ],
 
     "endPosScramble": {
