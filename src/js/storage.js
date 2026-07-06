@@ -21,7 +21,6 @@ function clearStoredSolves() { // dangerous
 function updateSolvesGUI() {
     document.querySelectorAll(".listElement").forEach(el => el.remove());
     currentSolveIndex = solveData.solves.length - 1;
-    console.log(currentSolveIndex);
     for (let i = 0; i < currentSolveIndex + 1; i++) {
         let solveContainer = document.getElementById("solves");
         let listElement = document.createElement("li");
