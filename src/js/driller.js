@@ -6,7 +6,7 @@ let set = setSelect.value;
 function getAlgorithms() {  
     // Partially copied from W3Schools
     // https://www.geeksforgeeks.org/javascript/read-json-file-using-javascript/
-    fetch("../assets/" + set + ".json")
+    fetch("https://raw.githubusercontent.com/EthanCubes/CubeTrainer/main/assets/" + set + ".json")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
