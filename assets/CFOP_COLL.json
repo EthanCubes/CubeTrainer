@@ -1,0 +1,37 @@
+{
+    "method": "CFOP",
+    "stage": "COLL",
+    "algorithms": [
+        {"name": "H1", "algorithm": "R U R' U R U' R' U R U2 R'", "endPos": "endPos0"},
+        {"name": "H2", "algorithm": "F R U' R' U R U2 R' U' R U R' U' F'", "endPos": "endPos0"},
+        {"name": "H3", "algorithm": "R U R' U R U L' U R' U' L", "endPos": "endPos0"},
+        {"name": "H4", "algorithm": "F R U R' U' R U R' U' R U R' U' F'", "endPos": "endPos0"},
+        {"name": "L1", "algorithm": "R' U2 R U R' U' R U R' U' R U R' U R", "endPos": "endPos0"},
+        {"name": "L2", "algorithm": "R' U2 R' D' R U2 R' D R2", "endPos": "endPos0"},
+        {"name": "L3", "algorithm": "R U2 R D R' U2 R D' R2", "endPos": "endPos0"},
+        {"name": "L4", "algorithm": "F R' F' r U R U' r'", "endPos": "endPos0"},
+        {"name": "L5", "algorithm": "x R' U R D' R' U' R D", "endPos": "endPos0"},
+        {"name": "L6", "algorithm": "R' U' R U R' F' R U R' U' R' F R2", "endPos": "endPos0"},
+        {"name": "P1", "algorithm": "R U2 R2 U' R2 U' R2 U2 R", "endPos": "endPos0"},
+        {"name": "P2", "algorithm": "R' F2 R U2 R U2 R' F2 U' R U' R'", "endPos": "endPos0"},
+        {"name": "P3", "algorithm": "R' U' F' R U R' U' R' F R2 U2 R' U2 R", "endPos": "endPos0"},
+        {"name": "P4", "algorithm": "R U R' U' R' F R2 U R' U' R U R' U' F'", "endPos": "endPos0"},
+        {"name": "P5", "algorithm": "R U' L' U R' U L U L' U L", "endPos": "endPos0"},
+        {"name": "P6", "algorithm": "R2 D' R U R' D R U R U' R' U R U R' U R", "endPos": "endPos0"},
+        {"name": "T1", "algorithm": "R U2 R' U' R U' R2 U2 R U R' U R", "endPos": "endPos0"},
+        {"name": "T2", "algorithm": "R' U R U2 R' L' U R U' L", "endPos": "endPos0"},
+        {"name": "T3", "algorithm": "l' U' L U l F' L' F", "endPos": "endPos0"},
+        {"name": "T4", "algorithm": "F R U R' U' R U' R' U' R U R' F'", "endPos": "endPos0"},
+        {"name": "T5", "algorithm": "r U R' U' r' F R F'", "endPos": "endPos0"},
+        {"name": "T6", "algorithm": "R' U R2 D r' U2 r D' R2 U' R", "endPos": "endPos0"},
+        {"name": "U1", "algorithm": "R' U' R U' R' U2 R2 U R' U R U2 R'", "endPos": "endPos0"},
+        {"name": "U2", "algorithm": "R' F R U' R' U' R U R' F' R U R' U' R' F R F' R", "endPos": "endPos0"},
+        {"name": "U3", "algorithm": "R2 D R' U2 R D' R' U2 R'", "endPos": "endPos0"},
+        {"name": "U4", "algorithm": "F R U' R' U R U R' U R U' R' F'", "endPos": "endPos0"},
+        {"name": "U5", "algorithm": "R2 D' R U2 R' D R U2 R", "endPos": "endPos0"},
+        {"name": "U6", "algorithm": "R2 D' R U R' D R U R U' R' U' R", "endPos": "endPos0"}
+    ],
+    "endPosScramble": {
+        "endPos0": ""
+    }
+}
