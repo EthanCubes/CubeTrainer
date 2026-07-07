@@ -41,6 +41,7 @@ function generateScramble() {
             break;
         case "driller":
             method = algorithmSet.method;
+            stage = algorithmSet.stage;
             if (method === "CFOP") {
                 let scrambleObj = pickScramble();
                 scramble = scrambleObj.algorithm;
@@ -53,19 +54,31 @@ function generateScramble() {
             }
             else {
                 if (method === "roux") {
-                    let scrambleObj = pickScramble();
-                    scramble = scrambleObj.algorithm;
-                    scrambleMoveList = scramble.split(/\s+/);
-                    flipScramble();
-                    let prefixKey = scrambleObj.endPos;
-                    console.log(prefixKey);
-                    let prefix = algorithmSet.endPosScramble[prefixKey];
-                    scramble = prefix + " " + scramble;
-                    scrambleMoveList = scramble.split(/\s+/);
-                    console.log(scramble);
-                    changeScrambleText();
-                    changeDrawing();
-                    break;
+                    if (!(stage === "CMLL")) {
+                        let scrambleObj = pickScramble();
+                        scramble = scrambleObj.algorithm;
+                        scrambleMoveList = scramble.split(/\s+/);
+                        flipScramble();
+                        let prefixKey = scrambleObj.endPos;
+                        console.log(prefixKey);
+                        let prefix = algorithmSet.endPosScramble[prefixKey];
+                        scramble = prefix + " " + scramble;
+                        scrambleMoveList = scramble.split(/\s+/);
+                        console.log(scramble);
+                        changeScrambleText();
+                        changeDrawing();
+                        break;
+                    }
+                    else {
+                        let scrambleObj = pickScramble();
+                        scramble = scrambleObj.algorithm;
+                        scrambleMoveList = scramble.split(/\s+/);
+                        flipScramble();
+                        console.log(scramble);
+                        changeScrambleText();
+                        changeDrawing();
+                        break;
+                    }
                 }
             }
     }
