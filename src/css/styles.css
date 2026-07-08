@@ -125,6 +125,8 @@ body {
 }
 
 #openHelp {
+    display: block;
+    max-width: 100px;
     cursor: pointer;
 }
 
