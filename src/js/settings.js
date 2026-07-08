@@ -1,7 +1,4 @@
 let programSettings = {
-    "operation": [
-        {"timerPrepTime": 500}
-    ],
     "theme": [
         {"color1": "rgb(22, 96, 236)"},
         {"color2": "rgb(171, 218, 252)"},
