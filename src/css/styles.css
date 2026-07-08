@@ -115,8 +115,12 @@
 }
 
 #openHelp {
+    width: 75px;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-105%, 0%);
     display: block;
-    max-width: 100px;
     cursor: pointer;
 }
 
