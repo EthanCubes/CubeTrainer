@@ -9,7 +9,7 @@ body {
 #solves {
     background-color: rgb(171, 218, 252);
 }
-#help {
+#help, #settings {
     background-color: rgb(171, 218, 252);
 }
 #drawing {

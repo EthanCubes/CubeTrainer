@@ -32,3 +32,18 @@ function helpWindow(status) {
             break;
     }
 }
+
+function settingsWindow(status) {
+    const settings = document.getElementById("settings");
+    switch (status) {
+        case "open":
+            dimWindow();
+            settings.style.display = "block";
+            sendToTop(settings);
+            break;
+        case "close":
+            settings.style.display = "none";
+            undim();
+            break;
+    }
+}

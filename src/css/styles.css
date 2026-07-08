@@ -93,7 +93,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#help {
+#help, #settings {
     display: none;
     position: absolute;
     top: 50%;
@@ -105,7 +105,7 @@
     overflow-y: scroll;
 }
 
-#closeHelp {
+#closeHelp, #closeSettings {
     cursor: pointer;
     color: red;
     position: absolute;
@@ -114,7 +114,7 @@
     transform: translate(-50%, -50%);
 }
 
-#openHelp {
+#openHelp, #openSettings {
     cursor: pointer;
 }
 
