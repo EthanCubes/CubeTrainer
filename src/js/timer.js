@@ -149,14 +149,26 @@ function toggleElements() {
         menus.style.display = "none";
     }
     else {
-        scramble.style.display = "flex";
         modeSelect.style.display = "inline";
         if (mode === "driller") {
             setSelect.style.display = "inline";
         }
-        drawing.style.display = "inline-grid";
         timeDifference.style.display = "block";
-        solves.style.display = "block";
+        if (!(programSettings.toggle[0])) {
+            drawing.style.display = "inline-grid";
+        } else {
+            drawing.style.display = "none";
+        }
+        if (!(programSettings.toggle[1])) {
+            solves.style.display = "block";
+        } else {
+            solves.style.display = "none";
+        }
+        if (!(programSettings.toggle[2])) {
+            scramble.style.display = "flex";
+        } else {
+            scramble.style.display = "none";
+        }
         menus.style.display = "block"
     }
 }

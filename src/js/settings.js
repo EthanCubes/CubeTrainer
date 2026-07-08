@@ -20,4 +20,6 @@ function updateSettings() {
     programSettings.toggle[0] = hideDrawing.checked;
     programSettings.toggle[1] = hideSolves.checked;
     programSettings.toggle[2] = hideScramble.checked;
+
+    toggleElements();
 }
