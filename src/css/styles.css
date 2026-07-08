@@ -115,13 +115,17 @@
 }
 
 #openHelp {
+    cursor: pointer;
+}
+
+#menus {
+    padding: 20px;
     width: 75px;
     position: absolute;
     top: 0%;
     left: 100%;
     transform: translate(-105%, 0%);
     display: block;
-    cursor: pointer;
 }
 
 .unselectable {
