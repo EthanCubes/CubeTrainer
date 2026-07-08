@@ -107,7 +107,7 @@ function triggerDown() {
                 let prepTime = Date.now() - prepStartTime;
                 if (prepTime > 500) {
                     timerStatus = "ready";
-                    console.log("Ready...")
+                    console.log("Ready...");
                 }
             }
         }
@@ -138,7 +138,7 @@ function toggleElements() {
     const drawing = document.getElementById("drawing");
     const solves = document.getElementById("solves")
     const timeDifference = document.getElementById("timeDifference");
-    const openHelp = document.getElementById("openHelp");
+    const menus = document.getElementById("menus");
     if (timerStatus === "timing") {
         scramble.style.display = "none";
         modeSelect.style.display = "none";
@@ -146,7 +146,7 @@ function toggleElements() {
         drawing.style.display = "none";
         timeDifference.style.display = "none";
         solves.style.display = "none";
-        openHelp.style.display = "none";
+        menus.style.display = "none";
     }
     else {
         scramble.style.display = "flex";
@@ -157,7 +157,7 @@ function toggleElements() {
         drawing.style.display = "inline-grid";
         timeDifference.style.display = "block";
         solves.style.display = "block";
-        openHelp.style.display = "block"
+        menus.style.display = "block"
     }
 }
 
