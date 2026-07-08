@@ -647,6 +647,7 @@ function changeDrawing() {
                 uMove(1);
                 break;
             case "U2":
+            case "U2'":
                 uMove(2);
                 break;
             case "U'":
@@ -657,6 +658,7 @@ function changeDrawing() {
                 lMove(1);
                 break;
             case "L2":
+            case "L2'":
                 lMove(2);
                 break;
             case "L'":
@@ -667,6 +669,7 @@ function changeDrawing() {
                 fMove(1);
                 break;
             case "F2":
+            case "F2'":
                 fMove(2);
                 break;
             case "F'":
@@ -677,6 +680,7 @@ function changeDrawing() {
                 rMove(1);
                 break;
             case "R2":
+            case "R2'":
                 rMove(2);
                 break;
             case "R'":
@@ -687,6 +691,7 @@ function changeDrawing() {
                 bMove(1);
                 break;
             case "B2":
+            case "B2'":
                 bMove(2);
                 break;
             case "B'":
@@ -697,6 +702,7 @@ function changeDrawing() {
                 dMove(1);
                 break;
             case "D2":
+            case "D2'":
                 dMove(2);
                 break;
             case "D'":
@@ -707,6 +713,7 @@ function changeDrawing() {
                 xMove(1);
                 break;
             case "x2":
+            case "x2'":
                 xMove(2);
                 break;
             case "x'":
@@ -717,6 +724,7 @@ function changeDrawing() {
                 yMove(1);
                 break;
             case "y2":
+            case "y2'":
                 yMove(2);
                 break;
             case "y'":
@@ -727,6 +735,7 @@ function changeDrawing() {
                 zMove(1);
                 break;
             case "z2":
+            case "z2'":
                 zMove(2);
                 break;
             case "z'":
@@ -739,6 +748,8 @@ function changeDrawing() {
                 break;
             case "Uw2":
             case "u2":
+            case "Uw2'":
+            case "u2'":
                 uWide(2);
                 break;
             case "Uw'":
@@ -752,6 +763,8 @@ function changeDrawing() {
                 break;
             case "Lw2":
             case "l2":
+            case "Lw2'":
+            case "l2'":
                 lWide(2);
                 break;
             case "Lw'":
@@ -765,6 +778,8 @@ function changeDrawing() {
                 break;
             case "Fw2":
             case "f2":
+            case "Fw2'":
+            case "f2'":
                 fWide(2);
                 break;
             case "Fw'":
@@ -778,6 +793,8 @@ function changeDrawing() {
                 break;
             case "Rw2":
             case "r2":
+            case "Rw2'":
+            case "r2'":
                 rWide(2);
                 break;
             case "Rw'":
@@ -791,6 +808,8 @@ function changeDrawing() {
                 break;
             case "Bw2":
             case "b2":
+            case "Bw2'":
+            case "b2'":
                 bWide(2);
                 break;
             case "Bw'":
@@ -804,6 +823,8 @@ function changeDrawing() {
                 break;
             case "Dw2":
             case "d2":
+            case "Dw2'":
+            case "d2'":
                 dWide(2);
                 break;
             case "Dw'":
@@ -815,6 +836,7 @@ function changeDrawing() {
                 mMove();
                 break;
             case "M2":
+            case "M2'":
                 mMove(2);
                 break;
             case "M'":
@@ -825,6 +847,7 @@ function changeDrawing() {
                 eMove();
                 break;
             case "E2":
+            case "E2'":
                 eMove(2);
                 break;
             case "E'":
@@ -835,6 +858,7 @@ function changeDrawing() {
                 sMove();
                 break;
             case "S2":
+            case "S2'":
                 sMove(2);
                 break;
             case "S'":
