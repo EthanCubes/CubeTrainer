@@ -138,6 +138,7 @@ function toggleElements() {
     const drawing = document.getElementById("drawing");
     const solves = document.getElementById("solves")
     const timeDifference = document.getElementById("timeDifference");
+    const openHelp = document.getElementById("openHelp");
     if (timerStatus === "timing") {
         scramble.style.display = "none";
         modeSelect.style.display = "none";
@@ -145,6 +146,7 @@ function toggleElements() {
         drawing.style.display = "none";
         timeDifference.style.display = "none";
         solves.style.display = "none";
+        openHelp.style.display = "none";
     }
     else {
         scramble.style.display = "flex";
@@ -155,6 +157,7 @@ function toggleElements() {
         drawing.style.display = "inline-grid";
         timeDifference.style.display = "block";
         solves.style.display = "block";
+        openHelp.style.display = "block"
     }
 }
 
