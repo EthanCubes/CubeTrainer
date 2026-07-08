@@ -136,11 +136,13 @@
         </div>
         <div id="settings">
             <h1>Settings</h1>
-            <p id="closeSettings" onclick="settingsWindow('close')">[X]</p>
+            <p id="closeSettings" onclick="settingsWindow('close'); updateSettings();">[X]</p>
+            <h2>Settings will save upon window close.</h2>
         </div>
 
         <div id="touchTrigger"></div>
 
+        <script src="./src/js/settings.js"></script>
         <script src="./src/js/timer.js"></script>
         <script src="./src/js/drawingCalculator.js"></script>
         <script src="./src/js/drawingRender.js"></script>
