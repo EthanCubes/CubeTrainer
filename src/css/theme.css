@@ -1,0 +1,17 @@
+/* Color 1 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 96, 136);
+    color: white;
+}
+
+/* Color 2 */
+#solves {
+    background-color: rgb(171, 218, 252);
+}
+#help {
+    background-color: rgb(171, 218, 252);
+}
+#drawing {
+    background-color: rgb(171, 218, 252);
+}
