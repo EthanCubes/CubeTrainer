@@ -22,4 +22,5 @@ function updateSettings() {
     programSettings.toggle[2] = hideScramble.checked;
 
     toggleElements();
+    updateLocalSettingsStorage();
 }

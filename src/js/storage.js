@@ -32,3 +32,14 @@ function updateSolvesGUI() {
         solveContainer.insertBefore(listElement, solveContainer.children[1]);
     }
 }
+
+
+function loadStoredSettings() {
+    if (JSON.parse(localStorage.getItem(storedSettings) === null)) { // getItem returns null if nothing
+        programSettings = JSON.parse(localStorage.getItem("storedSettings"));
+    }
+}
+
+function updateLocalSettingsStorage() {
+    localStorage.setItem("storedSettings", JSON.stringify(programSettings));
+}
