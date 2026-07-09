@@ -4,10 +4,12 @@ let programSettings = {
         "hideSolves": false,
         "hideScramble": false
     },
-    "theme": {
-        "color1": "rgb(22, 96, 236)",
-        "color2": "rgb(171, 218, 252)",
-        "textColor": "rgb(0, 0, 0)"
+    "themeIndex": {
+        "default": {
+            "color1": "rgb(22, 96, 236)",
+            "color2": "rgb(171, 218, 252)",
+            "textColor": "rgb(0, 0, 0)"
+        }   
     }
 }
 
@@ -23,8 +25,4 @@ function updateSettings() {
 
     toggleElements();
     updateLocalSettingsStorage();
-}
-
-function resetColor() {
-    programSettings.theme = {"color1": "rgb(22, 96, 236)","color2": "rgb(171, 218, 252)","textColor": "rgb(0, 0, 0)"}
 }
