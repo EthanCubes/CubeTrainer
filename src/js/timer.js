@@ -154,17 +154,17 @@ function toggleElements() {
             setSelect.style.display = "inline";
         }
         timeDifference.style.display = "block";
-        if (!(programSettings.toggle[0])) {
+        if (!(programSettings.toggle.hideDrawing)) {
             drawing.style.display = "inline-grid";
         } else {
             drawing.style.display = "none";
         }
-        if (!(programSettings.toggle[1])) {
+        if (!(programSettings.toggle.hideSolves)) {
             solves.style.display = "block";
         } else {
             solves.style.display = "none";
         }
-        if (!(programSettings.toggle[2])) {
+        if (!(programSettings.toggle.hideScramble)) {
             scramble.style.display = "flex";
         } else {
             scramble.style.display = "none";
