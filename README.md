@@ -8,13 +8,14 @@ A web application that serves as a timer, scramble generator, and algorithm dril
 
 
 ## How to run locally
-Download the repo from GitHub and unzip it. Open index.html with your preferred browser. Make sure that your browser is on a fairly recent version since browsers from before 2015 may not work.
-
+Download or clone the Git repo from GitHub. Open the index.html file inside the repo. Make sure you are connected to the internet or the driller will not work.
 
 ## Features
 - A timer that times your Rubik's cube solves.
 - A scramble generator that generates scrambles for you to time on the timer.
 - A net of the cube (A.K.A. Drawing) displays the current scramble that the scramble generator generated.
+- Solves are stored accross sessions, even after the page is closed or is refreshed. 
+- Settings, including the options to hide certain elements or change the theme of the website, are saved between sessions, even after page refresh.
 
 
 ## How it Works
@@ -54,9 +55,9 @@ This took me SOOO long to make and I procrastinated making this for so long.
 
 ## Credits
 - AI was used to indentify bugs.
-- AI was also used to make the JSON algorithm sets from sets of algorithms found on websites like [JPerm.net](https://jperm.net). It otherwise would've taken ages and also leaves a lot of room for human error.
+- AI was also used to make the JSON algorithm sets from sets of algorithms found on websites like [JPerm.net](https://jperm.net) and [Ruwix](https://ruwix.com). It otherwise would've taken ages and also leaves a lot of room for human error.
 - The algorithms for Roux Edge Orientation (EO) were taken from the JPerm video: [Rubik's Cube: Learn the Roux Method in 10 Minutes](https://youtu.be/ImBWkk-7teA?si=20UrSM_iXzJ-Pd8y)
-- A bunch of code was stolen from my other project CubeOS, and therefore I guess credit goes to SerenityUX's WebOS tutorial.
+- A bunch of code was stolen from my other project [CubeOS](https://github.com/EthanCubes/CubeOS)
 - [W3Schools](https://www.w3schools.com/), [GeeksForGeeks](https://www.geeksforgeeks.org),  and [MDN Web Docs](https://devloper.mozilla.org) were helpful for researching what code to write because I'm still very inexperienced.
 - [CSTimer.net](https://cstimer.net) and [JPerm.net](https://jperm.net) were the inspirations for me even making this project. A large portion of this project is me trying to copy them lol.
 - [Ruwix Cube Solver](https://ruwix.com/cube-solver/) helped me determine the fastest way to scramble a cube into the Roux EO position.
