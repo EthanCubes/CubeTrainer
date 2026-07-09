@@ -7,7 +7,7 @@ function loadStoredSolves() {
     }
 }
 
-function updateLocalStorage() {
+function updateLocalSolvesStorage() {
     localStorage.setItem("storedSolves", JSON.stringify(solveData));
 }
 
