@@ -57,7 +57,12 @@ function updateTimer() {
                 timer.style.color = "lightGreen";
             }
             else {
-                timer.style.color = "black";
+                if (programSettings.theme === "dark_mode") {
+                    timer.style.color = "white";
+                }
+                else {
+                    timer.style.color = "black";
+                }
             }
         }
     }
