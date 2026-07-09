@@ -46,7 +46,12 @@ function updateTimer() {
     if (timerStatus === "timing") {
         time = Date.now() - startTime;
         time = time / 1000;
-        timer.style.color = "black";
+        if (programSettings.theme === "dark_mode") {
+            timer.style.color = "white";
+        }
+        else {
+            timer.style.color = "black";
+        }
     }
     else {
         if (timerStatus === "prepping") {
