@@ -207,15 +207,12 @@ function flipScramble() {
         "z2'": "z2"
     }
 
-    console.log(scrambleMoveList);
     for (let i = 0; i < scrambleMoveList.length; i++) {
         scrambleMoveList[i] = flippedMoves[scrambleMoveList[i]];
     }
-    console.log(scrambleMoveList);
     scrambleMoveList.reverse();
     for (let i = 0; i < scrambleMoveList.length; i++) {
         flippedMoveScramble += scrambleMoveList[i] + " ";
     }
     scramble = flippedMoveScramble;
-    console.log(scrambleMoveList);
 }
