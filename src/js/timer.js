@@ -1,4 +1,4 @@
-let solveData = { solves: [] };
+let solveData = {timer: [], driller: []};
 let currentSolve = { time: undefined, scramble: undefined };
 
 let startTime;
@@ -31,7 +31,7 @@ function stopTimer() {
 
     currentSolve.time = time;
     currentSolve.scramble = scramble;
-    solveData.solves.push(JSON.parse(JSON.stringify(currentSolve)));
+    solveData[mode].push(JSON.parse(JSON.stringify(currentSolve)));
     console.log(solveData);
     updateLocalSolvesStorage();
 
@@ -86,7 +86,7 @@ document.addEventListener("keydown", function (event) {
     }
 })
 
-touchTrigger.addEventListener("pointerdown", function() {
+touchTrigger.addEventListener("pointerdown", function () {
     mouseDown = true;
 });
 
@@ -96,7 +96,7 @@ document.addEventListener("keyup", function (event) {
     }
 })
 
-touchTrigger.addEventListener("pointerup", function() {
+touchTrigger.addEventListener("pointerup", function () {
     mouseDown = false;
     triggerUp();
 });
@@ -191,8 +191,10 @@ function updateTimeDifference() {
         difference = difference.toFixed(3);
     }
     else {
-        difference = time - solveData.solves[currentSolveIndex].time;
+        if (!(solveData[mode][currentSolveIndex].time === undefined)) {
+            difference = time - solveData[mode][currentSolveIndex].time;
         difference = difference.toFixed(3);
+        }
     }
     if (difference >= 0) {
         timeDifference.innerHTML = "+" + difference;

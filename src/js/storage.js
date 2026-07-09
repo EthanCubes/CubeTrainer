@@ -3,7 +3,7 @@ let currentSolveIndex;
 function loadStoredSolves() {
     solveData = JSON.parse(localStorage.getItem("storedSolves"));
     if (solveData === null) {
-        solveData = {solves: []};
+        solveData = {timer: [], driller: []};
     }
 }
 
@@ -12,19 +12,18 @@ function updateLocalSolvesStorage() {
 }
 
 function clearStoredSolves() { // dangerous
-    solveData = {solves: []};
-    localStorage.clear();
+    solveData = {timer: [], driller: []};
     updateSolvesGUI();
 }
 
 
 function updateSolvesGUI() {
     document.querySelectorAll(".listElement").forEach(el => el.remove());
-    currentSolveIndex = solveData.solves.length - 1;
+    currentSolveIndex = solveData[mode].length - 1;
     for (let i = 0; i < currentSolveIndex + 1; i++) {
         let solveContainer = document.getElementById("solves");
         let listElement = document.createElement("li");
-        let node = solveData.solves[i].time;
+        let node = solveData[mode][i].time;
         listElement.append(node);
         listElement.classList.add("listElement");
         listElement.id = i;

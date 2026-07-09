@@ -6,6 +6,7 @@ setSelect.addEventListener("change", setChanged);
 
 function modeChanged() {
     mode = modeSelect.value;
+    updateSolvesGUI();
     updateSettings();
     console.log(mode);
     switch (mode) {
@@ -26,9 +27,10 @@ function setChanged() {
     getAlgorithms();
 }
 
+modeChanged();
+
 loadStoredSolves();
 updateSolvesGUI();
-modeChanged();
 
 if (mode === "driller") {
     setChanged();
