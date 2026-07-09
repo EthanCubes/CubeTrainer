@@ -6,6 +6,7 @@ setSelect.addEventListener("change", setChanged);
 
 function modeChanged() {
     mode = modeSelect.value;
+    updateSettings();
     console.log(mode);
     switch (mode) {
         case "timer":
