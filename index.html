@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./src/css/theme.css">
         <link rel="icon" href="https://raw.githubusercontent.com/EthanCubes/CubeTrainer/main/favicon.ico">
     </head>
-    <body>
+    <body class="color1">
         <!-- Very disorgnized code. Messy and hard to read. Remember to improve later lol-->
         <select id="modeSelect">
             <option value="timer">Timer</option>
@@ -20,12 +20,12 @@
             <option value="roux_CMLL">Roux CMLL</option>
         </select>
 
-        <div id="menus">
+        <div id="menus" class="color2">
             <p id="openHelp" onclick="helpWindow('open')">Help/FAQ</p>
             <p id="openSettings" onclick="settingsWindow('open')">Settings</p>
         </div>
 
-        <div id="scrambleContainer">
+        <div id="scrambleContainer" class="color2">
             <p id="scramble" style="margin: 0px; margin-right: 10px;" onclick="copyScramble()"></p>
             <p onclick="generateScramble()" class="fakeButton" style="background-color: white; border: solid; border-width: 1px; border-radius: 8px; color: black; margin: 0px; padding-left: 5px; padding-right: 5px;">Next Scramble</p>
         </div>
@@ -34,7 +34,7 @@
 
         <h1 id="timeDifference"></h1>
 
-        <div id="solves">
+        <div id="solves" class="color2">
             <div style="display: flex; ">
                 <h2 style="color: black; margin: 0px;">Solves</h2>
                 &nbsp;
@@ -43,7 +43,7 @@
             <p id="child"></p>
         </div>
 
-        <div id="drawing">
+        <div id="drawing" class="color2">
             <div class="placeholder"></div>
             <div class="drawingFace" id="white">
                 <div class="grid" id="grid0"></div>
@@ -121,7 +121,7 @@
         </div>
 
         <div id="dim"></div>
-        <div id="help">
+        <div id="help" class="color2">
             <h1>Help / FAQ</h1>
             <p id="closeHelp" onclick="helpWindow('close')">[X]</p>
             <h2>idk why I named it a faq considering no one has ever asked me any questions about this.</h2>
@@ -134,7 +134,7 @@
             <p>This is a known "bug" due to the random engine rolling the same number twice in a row.</p>
             <h6>this is it lol</h6>
         </div>
-        <div id="settings">
+        <div id="settings" class="color2">
             <h1>Settings</h1>
             <p id="closeSettings" onclick="settingsWindow('close'); updateSettings();">[X]</p>
             <h2>Settings will save upon window close.</h2>
