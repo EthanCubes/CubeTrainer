@@ -33,4 +33,5 @@ if (mode === "driller") {
     setChanged();
 }
 
+loadStoredSettings();
 updateSettings();
