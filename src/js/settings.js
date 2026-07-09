@@ -24,3 +24,7 @@ function updateSettings() {
     toggleElements();
     updateLocalSettingsStorage();
 }
+
+function resetColors() {
+    programSettings.theme = {"color1": "rgb(22, 96, 236)","color2": "rgb(171, 218, 252)","textColor": "rgb(0, 0, 0)"}
+}
