@@ -38,3 +38,11 @@ if (mode === "driller") {
 
 loadStoredSettings();
 updateSettings();
+
+document.addEventListener('keydown', function(e) {
+  if ((e.key === ' ' || e.code === 'Space') && 
+      document.activeElement && 
+      document.activeElement.tagName === 'SELECT') {
+    e.preventDefault();
+  }
+}); 
