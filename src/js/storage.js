@@ -34,7 +34,7 @@ function updateSolvesGUI() {
 
 
 function loadStoredSettings() {
-    if (JSON.parse(localStorage.getItem("storedSettings") === null)) { // getItem returns null if nothing
+    if (JSON.parse(localStorage.getItem("storedSettings")) === null) { // getItem returns null if nothing
         programSettings = JSON.parse(localStorage.getItem("storedSettings"));
     }
 }
