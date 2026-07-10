@@ -42,3 +42,9 @@ function loadStoredSettings() {
 function updateLocalSettingsStorage() {
     localStorage.setItem("storedSettings", JSON.stringify(programSettings));
 }
+
+function totalWipe() {
+    solveData = null;
+    localStorage.clear;
+    location.reload;
+}
