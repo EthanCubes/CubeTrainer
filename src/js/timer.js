@@ -191,7 +191,7 @@ function updateTimeDifference() {
         difference = difference.toFixed(3);
     }
     else {
-        if (!(solveData[mode][currentSolveIndex].time === undefined)) {
+        if (!(solveData[mode][currentSolveIndex] === undefined)) {
             difference = time - solveData[mode][currentSolveIndex].time;
         difference = difference.toFixed(3);
         }

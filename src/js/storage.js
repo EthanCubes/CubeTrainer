@@ -45,6 +45,6 @@ function updateLocalSettingsStorage() {
 
 function totalWipe() {
     solveData = null;
-    localStorage.clear;
-    location.reload;
+    localStorage.clear();
+    window.location.reload(true);
 }
